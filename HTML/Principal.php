@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/Principal .css" />
+    <title>Square One</title>
+  </head>
+  <body>
+  
+    <header class="header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+          <a href="../HTML/Principal.php">
+          <img
+                src="../IMG/Logo.png"  height="170"
+                alt="logo"
+                class="nav__logo-dark"
+              />
+              <img
+                src="../IMG/Logo.png" 
+                alt="logo" 
+                class="nav__logo-white"
+              />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div> 
+        </div>
+        <ul class="nav__links" id="nav-links">
+            
+          <li><a href="../HTML/Principal.php">INICIO</a></li>
+          <li><a href="#special">ESPECIALES</a></li>
+          <li><a href="../HTML/Menu.php">MENU</a></li>
+          <li><a href="#event">EVENTOS</a></li>
+          <li><a href="../HTML/Historia.php">HISTORIA</a></li>
+          <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
+
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        
+        <div class="header__content">
+          <h2>ES UN BUEN MOMENTO PARA UNA DELICIOSA HAMBURGUESA</h2>
+          <h1>SEMANA <span>DE <br/> LA HAMBURGUESA</span></h1>
+        </div>
+        <div class="header__image">
+          <img src="hamburguesa-preview.png" width="550" height="500" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container banner__container" id="special">
+      <div class="banner__card">
+        <p>LA ENSALADA MAS POPULAR</p>
+        <h4>ENSALADA DE CHURRASCO</h4>
+      </div>
+      <div class="banner__card">
+        <p>MAS PIEZAS, MAS SABOR</p>
+        <h4>TUNA<br />POKE</h4>
+      </div>
+      <div class="banner__card">
+        <p>ENCHILATE CON SU FRESCURA</p>
+        <h4>TACOS<BR> DE RES</h4>
+      </div>
+    </section>
+
+    <section class="section__container order__container" id="menu">
+      <h3>TODO TIPO DE ANTOJOS</h3>
+      <h2 class="section__header">ELIGE Y DISFRUTA</h2>
+      <p class="section__description">
+        Ya sea que te apetezcan sabores clásicos o combinaciones atrevidas, aquí es donde comienza tu aventura 
+        culinaria. Satisface tus antojos y saborea cada bocado mientras creas tu experiencia.
+      </p>
+      <div class="order__grid">
+        <div class="order__card">
+          <img src="../IMG/alfred.jpg" alt="order" />
+          <h4>ALFREDO CON CAMARONES</h4>
+          <p>
+            Pasta de su preferencia al dente, preparada
+             en salsa Alfredo con camarones.<BR> RD$405.00
+          </p>
+          <button class="btn">ORDENAR</button>
+        </div>
+        <div class="order__card">
+          <img src="../IMG/buffalo.jpg" alt="order" />
+          <h4>Yaroa Buffalo</h4>
+          <p>
+            Crocantes papas fritas con exquisitas pechuguitas
+             de pollo picante, salsa bechamel, queso gouda,
+              blue cheese, cheddar y puerro. <BR> RD$375.00
+          </p>
+          <button class="btn">ORDENAR</button>
+        </div>
+        <div class="order__card">
+          <img src="../IMG/churra.jpg" alt="order" />
+          <h4>CHURRASCO IMPORTADO</h4>
+          <p>
+            10 oz de jugoso corte de churrasco con sazón 
+            de parrilla acompañado de salsa chimichurri. <BR> RD$1,200.00
+          </p>
+          <button class="btn">ORDENAR</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container event__container" id="event">
+      <div class="event__content">
+        <div class="event__image">
+          <img src="../IMG/hombre-toca-guitarra-canta-restaurante_14117-1169080.avif" alt="event" />
+        </div>
+        <div class="event__details">
+          <h3>Descubre</h3>
+          <h2 class="section__header">CONOCE TALENTOS</h2>
+          <p class="section__description">
+            Square One no solo se ha convertido en un referente gastronómico,
+            sino también en un espacio para la música en vivo, atrayendo a 
+            artistas locales e internacionales que deleitan a los comensales
+            con diversos géneros musicales. Cantantes de jazz, pop y música
+            tropical  han encontrado en este restaurante un escenario
+            ideal para conectarse con el público en un ambiente acogedor y 
+            vibrante. Estos eventos han contribuido a la identidad cultural
+            del lugar, convirtiéndolo en un punto de encuentro no solo para
+            amantes de la buena comida, sino también para quienes disfrutan
+            de la música en vivo y el arte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation" id="contact">
+      <div class="section__container reservation__container">
+        <h3>RESERVACION</h3>
+        <h2 class="section__header">LLENA EL FORMULARIO</h2>
+        <form action="/">
+          <input type="text" placeholder="NAME" />
+          <input type="number" placeholder="TEL" />
+          <input type="email" placeholder="EMAIL" />
+          <input type="date" placeholder="DATE" />
+          <input type="time" placeholder="TIME" />
+          <input type="number" placeholder="PEOPLE" />
+          <button class="btn" type="submit">ENVIAR</button>
+        </form>
+      </div>
+      <img
+        src="../IMG/GA-preview.png"
+        alt="reservation"
+        class="reservation__bg-1"
+      />
+      <img
+        src="../IMG/JAMON-preview.png"
+        alt="reservation"
+        class="reservation__bg-2"
+      />
+    </section>
+    <section class="section__container suggestion__container" id="suggestion">
+      <h3>BUZÓN DE SUGERENCIAS</h3>
+      <h2 class="section__header">¡TU OPINIÓN NOS IMPORTA!</h2>
+      <form id="suggestion-form" action="https://formsubmit.co/lauraabigailnovadiaz121@gmail.com" method="POST">
+        <textarea name="message" placeholder="Escribe tu sugerencia aquí..." required></textarea>
+        <button class="btn" type="submit">ENVIAR</button>
+      </form>
+      <p id="message" style="display:none; color: green; margin-top: 10px;">¡Gracias por tu sugerencia!</p>
+    </section>
+
+    <script>
+      document.getElementById("suggestion-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        document.getElementById("message").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("message").style.display = "none";
+        }, 3000);
+        this.reset();
+      });
+    </script>
+
+    <section class="section-footer">
+      <footer class="footer">
+        <div class="footer-group-container">
+          <div class="footer-group box-logo">
+            <img src="../IMG/FACHADA.jpg" alt="" class="footer__logo">
+          </div>
+          <div class="footer-group box-content">
+            <ul class="footer__links">
+              <li class="footer__li">
+                <span><i class="ri-map-pin-2-fill footer__icon"></i></span>
+                <p class="footer__li-text">Av. Salvador Estrella Sadhalá</p>
+              </li>
+              <li class="footer__li">
+                <span><i class="ri-mail-fill footer__icon"></i></span>
+                <p class="footer__li-text">squareone@gmail.com</p>
+              </li>
+            </ul>
+            <div class="footer__socials">
+              <a href="https://www.facebook.com/square1rd"><i class="ri-facebook-circle-fill footer__social-icons"></i></a>
+              <a href="https://www.instagram.com/squareonecafe?igsh=MTd0eWl5Z21rdW9rNg=="><i class="ri-instagram-fill footer__social-icons"></i></a>
+              <a   href="https://x.com/squareonecafe" ><i class="ri-twitter-fill footer__social-icons"></i></a>
+            </div>
+          </div>
+          <div class="footer-group box-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3059313253116!2d-70.69021072573855!3d19.44237234037057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1cf68cf01d16b%3A0xd35cc3bd8b0fcda2!2sSquare%20One!5e0!3m2!1ses-419!2sdo!4v1742901932824!5m2!1ses-419!2sdo" 
+                width="300" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <div class="footer__bottom-text-box">
+          <p class="footer__bottom-text">IMPUESTOS INCLUIDOS</p>
+        </div>
+      </footer>
+    </section>
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../JS/menu.js"></script>
+
+  </body>
+</html> 
