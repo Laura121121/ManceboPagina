@@ -40,7 +40,7 @@
           <li><a href="../HTML/Menu.php">MENU</a></li>
           <li><a href="#event">EVENTOS</a></li>
           <li><a href="../HTML/Historia.php">HISTORIA</a></li>
-          <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
+          <li><a href="../HTML/carrito.php"><i class="ri-shopping-cart-line"></i></a></li>
 
         </ul>
       </nav>
