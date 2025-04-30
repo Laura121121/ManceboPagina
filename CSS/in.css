@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body{
+    background: #fff;
+    padding: 0 9%;
+}
+
+.header{
+    padding: 1rem 0;
+}
+
+.header--menu{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.burger--icon img{
+    padding: 10px;
+    background-color: gray;
+    color: var(--accent-color);
+    border-radius: 10px;
+    cursor:pointer
+}
+
+.search-box{
+    background:rgb(158, 202, 158);
+    border-radius: 10px;
+    flex: 1;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search-box img{
+    color: rgb(158, 202, 158);
+}
+
+.search-box input{
+    background: transparent;
+    padding: 10px;
+    width: 80%;
+}
+
+.menu--icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu--icons img{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(202, 200, 200);    
+}
+
+.cart-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.cart-icon span{
+     background: rgb(13, 158, 13);
+     color: rgb(253, 251, 251);
+     border-radius: 50%;
+     width: 15px;
+     height: 15px;
+     font-size: 11px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 600;
+     position: absolute;
+     right: -5px;
+     top: -5px;
+}
+
+.cart-icon img{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent !important;
+    border: 1px solid gray;
+    color: gray; 
+}
+
+.cover{
+    background-image: url('../IMG/pizzapor.jpg');
+    background-size: cover;
+    height: 25vh;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.cover-overlay{
+    background: rgba( 0, 0, 0, 0.6);
+    height: 100%;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.section-heading{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 1rem 0 10px 0;
+    color: rgb(22, 21, 21);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu--list{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.menu-item{
+    width: 114px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 10px 13px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.menu-item img{
+    width: 100%;
+}
+
+.card--list{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.card{
+    width: 190px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    background: rgb(236, 233, 233);
+    box-shadow: 0px 10px 15px -3px rgba( 0, 0, 0, 0.1);
+    text-align: center;
+    color: rgb(7, 7, 7);
+}
+
+.card img{
+    width: 100%;
+}
+
+.card--price{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card--price .price{
+    color: rgb(3, 3, 3);
+    font-weight: 600;
+}
+
+.card--price img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.card--price img:hover{
+    color: blue;
+    box-shadow: rgb(0, 0, 0/ 30%) 0px 4px 4px, rgb(231, 236, 236) 0px 0px 0px 3px;
+}
+
+.sidebar{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    /*right: 0; */
+    right: -300px;
+    background-color: #fff;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3 ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidebar.open{
+    right: 0;
+}
+
+.sidebar-close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.cart-tems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.individual-cart-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: aqua;
+    border: 1px solid gray;
+}
+
+.cart-item .price{
+    color: blue;
+}
+
+.sidebar--footer{
+    position: absolute;
+    bottom: 10px;
+    width: 88%;
+}
+
+.total--amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+.cart-total{
+    font-size: 16px;
+    color: brown;
+    font-weight: 500;
+}
+
+.checkout-btn{
+    width: 100%;
+    margin-top: 2rem;
+    background: #06ac46;
+    color: #04200f;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}

@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="../CSS/carrito.css">
     <title>Carrito</title>
+    <head>
+  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="small-container cart-page">
-        <table>
-          <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Subtotal</th>
-          </tr>
-          <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="ri-shopping-cart-line">
-                    <div>
-                        <p>Printed t-shirt</p>
-                        <small>Precio: RD$500.00</small>
-                        <a href="portada.jpg">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>RD$100.00</td>
-          </tr>
-        </table>
-       </div>
+  <div class="header">
+    <p class="logo">LOGO</p>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+      <p id="count">0</p>
+    </div>
+  </div>
+  <div class="container">
+    <div id="root"></div>
+    <div class="sidebar">
+      <div class="head">
+        <p>My Cart</p>
+      </div>
+      <div id="cartItem">Your cart is empty</div>
+      <div class="foot">
+        <h3>Total</h3>
+        <h2 id="total">$ 0.00</h2>
+      </div>
+    </div>
+  </div>
+  <script src="../JS/carrito.js"></script>
+
 </body>
 </html>

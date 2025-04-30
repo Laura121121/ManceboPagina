@@ -40,8 +40,9 @@
           <li><a href="../HTML/Menu.php">MENU</a></li>
           <li><a href="#event">EVENTOS</a></li>
           <li><a href="../HTML/Historia.php">HISTORIA</a></li>
-          <li><a href="../HTML/carrito.php"><i class="ri-shopping-cart-line"></i></a></li>
-
+          <div class="cart-icon">
+          <li><a href="#carrito-container"><i class=" ri-shopping-cart-line"></i></a></li>
+          </div>
         </ul>
       </nav>
       <div class="section__container header__container" id="home">
