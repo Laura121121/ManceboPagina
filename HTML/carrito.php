@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/carrito.css">
-    <title>Carrito</title>
-    <head>
-  <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de Imágenes</title>
+  <link rel="stylesheet" href="../CSS/carrito.css">
 </head>
-
 <body>
-  <div class="header">
-    <p class="logo">LOGO</p>
-    <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
-      <p id="count">0</p>
-    </div>
-  </div>
-  <div class="container">
-    <div id="root"></div>
-    <div class="sidebar">
-      <div class="head">
-        <p>My Cart</p>
-      </div>
-      <div id="cartItem">Your cart is empty</div>
-      <div class="foot">
-        <h3>Total</h3>
-        <h2 id="total">$ 0.00</h2>
-      </div>
-    </div>
-  </div>
-  <script src="../JS/carrito.js"></script>
 
+  <div class="carousel">
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-slide current-slide">
+          <img src="../IMG/a1.jpg" alt="Imagen 1">
+        </li>
+        <li class="carousel-slide">
+          <img src="../IMG/a1.jpg" alt="Imagen 2">
+        </li>
+        <li class="carousel-slide">
+          <img src="../IMG/a1.jpg" alt="Imagen 3">
+        </li>
+      </ul>
+    </div>
+
+    <button class="carousel-button left">&#10094;</button>
+    <button class="carousel-button right">&#10095;</button>
+
+    <div class="carousel-nav">
+      <button class="carousel-indicator current-slide"></button>
+      <button class="carousel-indicator"></button>
+      <button class="carousel-indicator"></button>
+    </div>
+  </div>
+
+  <script src="../JS/carrito.js"></script>
 </body>
 </html>

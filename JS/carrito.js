@@ -1,79 +1,57 @@
-const product = [
-    {
-      id: 0,
-      image: 'image-path/gg-1.jpg',
-      title: 'Z Flip Foldable Mobile',
-      price: 120,
-    },
-    {
-      id: 1,
-      image: 'image-path/hh-2.jpg',
-      title: 'Air Pods Pro',
-      price: 60,
-    },
-    {
-      id: 2,
-      image: 'image-path/ee-3.jpg',
-      title: '250D DSLR Camera',
-      price: 230,
-    },
-    {
-      id: 3,
-      image: 'image-path/aa-1.jpg',
-      title: 'Head Phones',
-      price: 100,
-    }
-  ];
-  const categories = [...new Set(product.map((item) => { return item }))]
-  let i = 0;
-  document.getElementById('root').innerHTML = categories.map((item) => {
-    var { image, title, price } = item;
-    return (
-      `<div class='box'>
-        <div class='img-box'>
-          <img class='images' src=${image}></img>
-        </div>
-        <div class='bottom'>
-          <p>${title}</p>
-          <h2>$ ${price}.00</h2>` +
-          "<button onclick='addtocart(" + (i++) + ")'>Add to cart</button>" +
-        `</div>
-      </div>`
-    )
-  }).join('')
-  
-  var cart = [];
-  
-  function addtocart(a) {
-    cart.push({ ...categories[a] });
-    displaycart();
-  }
-  function delElement(a) {
-    cart.splice(a, 1);
-    displaycart();
-  }
-  
-  function displaycart() {
-    let j = 0, total = 0;
-    document.getElementById("count").innerHTML = cart.length;
-    if (cart.length == 0) {
-      document.getElementById('cartItem').innerHTML = "Your cart is empty";
-      document.getElementById("total").innerHTML = "$ " + 0 + ".00";
-    }
-    else {
-      document.getElementById("cartItem").innerHTML = cart.map((items) => {
-        var { image, title, price } = items;
-        total = total + price;
-        document.getElementById("total").innerHTML = "$ " + total + ".00";
-        return (
-          `<div class='cart-item'>
-            <div class='row-img'>
-              <img class='rowimg' src=${image}>
-            </div>
-            <p style='font-size:12px;'>${title}</p>
-            <h2 style='font-size: 15px;'>$ ${price}.00</h2>` +
-          "<i class='fa-solid fa-trash' onclick='delElement(" + (j++) + ")'></i></div>"
-        );
-      }).join('');
-    }
-  }
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.carousel-button.right');
+const prevButton = document.querySelector('.carousel-button.left');
+const dotsNav = document.querySelector('.carousel-nav');
+const dots = Array.from(dotsNav.children);
+
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+// Acomoda las diapositivas
+slides.forEach((slide, index) => {
+  slide.style.left = slideWidth * index + 'px';
+});
+
+const moveToSlide = (track, currentSlide, targetSlide) => {
+  track.style.transform = `translateX(-${targetSlide.style.left})`;
+  currentSlide.classList.remove('current-slide');
+  targetSlide.classList.add('current-slide');
+};
+
+const updateDots = (currentDot, targetDot) => {
+  currentDot.classList.remove('current-slide');
+  targetDot.classList.add('current-slide');
+};
+
+nextButton.addEventListener('click', () => {
+  const currentSlide = track.querySelector('.current-slide');
+  const nextSlide = currentSlide.nextElementSibling || slides[0];
+  const currentDot = dotsNav.querySelector('.current-slide');
+  const nextDot = currentDot.nextElementSibling || dots[0];
+
+  moveToSlide(track, currentSlide, nextSlide);
+  updateDots(currentDot, nextDot);
+});
+
+prevButton.addEventListener('click', () => {
+  const currentSlide = track.querySelector('.current-slide');
+  const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
+  const currentDot = dotsNav.querySelector('.current-slide');
+  const prevDot = currentDot.previousElementSibling || dots[dots.length - 1];
+
+  moveToSlide(track, currentSlide, prevSlide);
+  updateDots(currentDot, prevDot);
+});
+
+dotsNav.addEventListener('click', e => {
+  if (!e.target.matches('button')) return;
+
+  const targetDot = e.target;
+  const currentSlide = track.querySelector('.current-slide');
+  const currentDot = dotsNav.querySelector('.current-slide');
+  const targetIndex = dots.findIndex(dot => dot === targetDot);
+  const targetSlide = slides[targetIndex];
+
+  moveToSlide(track, currentSlide, targetSlide);
+  updateDots(currentDot, targetDot);
+});

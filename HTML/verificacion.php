@@ -70,3 +70,31 @@
     </script>
 </body>
 </html>
+
+<?php
+include("connection.php");
+
+$msg='';
+if(isset($_POST['submit'])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $select1 = "SELECT * FROM `users` WHERE email = '$email' AND password= '$password'";
+    $select_user = mysqli_query($conn,$select1);
+    if(mysqli_num_rows($select_user)> 0){
+        $row1 = mysqli_fetch_assoch($select_user);
+        if($row1['user_type'] == 'user'){
+            $_SESSION['user'] = $row1['email'];
+            $_SESSION['id'] = $row1['id'];
+            header('location:user.php');
+        }
+        elseif($row1['user_type'] =='admin'){
+            $_SESSION['admin'] = $row1['email'];
+            $_SESSION['id'] = $row1['id'];
+            header('location:user.php');
+        }
+        else{
+            $msg= "Contraseña incorrecta, intente de nuevo";
+        }
+    }
+}

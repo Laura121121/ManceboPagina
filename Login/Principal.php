@@ -38,8 +38,8 @@
           <li><a href="../HTML/Principal.php">INICIO</a></li>
           <li><a href="#special">ESPECIALES</a></li>
           <li><a href="../HTML/Menu.php">MENU</a></li>
-          <li><a href="#event">EVENTOS</a></li>
           <li><a href="../HTML/Historia.php">HISTORIA</a></li>
+          <li><a href="../Login/Registro.php">CLOSED</a></li>
           <div class="cart-icon">
           <li><a href="#carrito-container"><i class=" ri-shopping-cart-line"></i></a></li>
           </div>
@@ -51,9 +51,30 @@
           <h2>ES UN BUEN MOMENTO PARA UNA DELICIOSA HAMBURGUESA</h2>
           <h1>SEMANA <span>DE <br/> LA HAMBURGUESA</span></h1>
         </div>
-        <div class="header__image">
-          <img src="hamburguesa-preview.png" width="550" height="500" alt="header" />
-        </div>
+        <div class="carousel">
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-slide current-slide">
+          <img src="../IMG/a1.jpg" alt="Imagen 1">
+        </li>
+        <li class="carousel-slide">
+          <img src="../IMG/a1.jpg" alt="Imagen 2">
+        </li>
+        <li class="carousel-slide">
+          <img src="../IMG/a1.jpg" alt="Imagen 3">
+        </li>
+      </ul>
+    </div>
+
+    <button class="carousel-button left">&#10094;</button>
+    <button class="carousel-button right">&#10095;</button>
+
+    <div class="carousel-nav">
+      <button class="carousel-indicator current-slide"></button>
+      <button class="carousel-indicator"></button>
+      <button class="carousel-indicator"></button>
+    </div>
+  </div>
       </div>
     </header>
 
@@ -225,6 +246,7 @@
     
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../JS/menu.js"></script>
+    <script src="../JS/carrito.js"></script>
 
   </body>
 </html> 
