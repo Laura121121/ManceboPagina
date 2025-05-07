@@ -2,17 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/mexicano.css">
-    <title>desayuno</title>
+    <title>Square One</title>
+    <link rel="stylesheet" href="../CSS/postres.css">
 </head>
 <body>
-    <!-- Header with navigation -->
-    <header>
+<header>
         <div class="container">
             <nav class="navbar">
                 <div class="nav__logo">
-                <a href="../HTML/Principal.php">
+                <a href="../Login/Principal.php">
                 <img
                         src="../IMG/Logo.png"  height="170"
                         alt="logo"
@@ -22,25 +20,21 @@
                   </div>
                 
                   <ul class="nav-links">
-                    <li><a href="../HTML/Principal.php">INICIO</a></li>
-                    <li><a href="#special">ESPECIALES</a></li>
-                    <li><a href="../HTML/Menu.php">MENU</a></li>
-                    <li><a href="#event">EVENTOS</a></li>
+                  <li><a href="../Login/Principal.php">INICIO</a></li>
+                    <li><a href="../HTML/entradas.php">MENU</a></li>
                     <li><a href="../HTML/Historia.php">HISTORIA</a></li>
-                    <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
-                          </ul>
-                
-                <button class="order-now-btn">Ordenar Ahora</button>
-            </nav>
+                    <li><a href="../Login/Registro.php">CLOSED</a></li>
+                    <div class="cart-icon">
+                     🛒 <span>0</span>
+                    </div>                          
+                  </ul>
+          </nav>
         </div>
     </header>
-    
-    <!-- Menu content -->
-    <main class="menu-content">
-        <div class="container">
-            <!-- Category filters -->
-            <div class="category-filters">
-                <a href="../HTML/Menu.php"><button class="category-btn active">Desayunos</button></a>
+
+    <main>
+    <div class="category-filters">
+                <a href="../HTML/Desayuno.php"><button class="category-btn active">Desayunos</button></a>
                <a href="../HTML/entradas.php"><button class="category-btn">Entradas</button></a>
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
@@ -52,227 +46,232 @@
                 <a href="../HTML/bebidas.php"><button class="category-btn">Bebidas</button></a>
                 <a href="../HTML/verificacion.php"><button class="category-btn">Bebidas Alcoholicas</button></a>  
             </div>
-            
-            <!-- Menu items grid -->
-            <div class="menu-grid">  
-                <!-- Menu item 2 -->
-                <div class="menu-item">
-                    <img src="../IMG/m1.jpg" alt="Bruschetta Clásica" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Bruschetta Clásica</h3>
-                            <span class="menu-item-price">$8.95</span>
-                        </div>
-                        <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-vegetarian">Vegetariano</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Menu item 3 -->
-                <div class="menu-item">
-                    <img src="../IMG/m2.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
 
-                  <!-- Menu item 1 -->
-                <div class="menu-item">
-                    <img src="../IMG/m3.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m4.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m5.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m6.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m7.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m8.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m9.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m10.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m11.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 1 -->
-                 <div class="menu-item">
-                    <img src="../IMG/m12.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
+        <div class="cards">
+          <!-- Ejemplo de card modificada -->
+        <div class="card">
+            <img src="../IMG/m1.jpg" alt="Quesadilla Pollo y Queso" class="dish-image">
+            <h4 class="card--title tag-popular">Quesadilla Pollo y Queso</h4>
+            <p class="menu-item-description">Tortilla rellena de pechuga de pollo a la plancha y queso danés...</p>
+            <div class="card--price">
+                <div class="price">RD$295.00</div>
+                <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                </ul>
             </div>
         </div>
+
+            <div class="card">
+                <img src="../IMG/m2.jpg" alt="">
+                <h4 class="card--title tag-popular">Quesadilla de Churrasco</h4>
+            <p class="menu-item-description">Quesadilla con tortilla rellena de tiras de churrasco jugosas...</p>
+                <div class="card--price">
+                    <div class="price">RD$650.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Quesadilla con tortilla rellena de tiras de churrasco jugosas, queso danés derretido, pico de gallo fresco, guacamole cremoso y un toque de crema agria, ofreciendo una deliciosa combinación de sabores y texturas.
+                </ul>
+            </div>
+          </div>
+
+
+            <div class="card">
+                <img src="../IMG/m3.jpg" alt="">
+                <h4 class="card--title tag-popular">Fajitas de Pollo</h4>
+            <p class="menu-item-description">Jugosa pechuga de pollo a la plancha marinada con cebolla y pimientos...</p>
+                <div class="card--price">
+                    <div class="price">RD$440.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                   Jugosa pechuga de pollo a la plancha marinada con cebolla y pimientos, servida con pico de gallo, guacamole, queso cheddar, crema agria y tortilla de trigo.
+                </ul>
+            </div>
+          </div>
+
+            
+            <div class="card">
+                <img src="../IMG/m4.jpg" alt="">
+                <h4 class="card--title tag-popular">Fajitas Mixtas</h4>
+            <p class="menu-item-description">Deliciosa combinación de filete de res y pechuga de pollo marinados...</p>
+                <div class="card--price">
+                    <div class="price">RD$565.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+                <div class="hidden-details">
+                    <ul class="ingredients">
+                    Deliciosa combinación de filete de res y pechuga de pollo marinados con cebolla y pimientos servido con pico de gallo, guacamole, queso cheddar, crema agria y tortilla de trigo.
+                    </ul>
+                </div>
+             </div>
+
+            
+            <div class="card">
+                <img src="../IMG/m5.jpg" alt="">
+                <h4 class="card--title tag-popular">Burrito de Pollo</h4>
+            <p class="menu-item-description">Burrito de pollo relleno de habichuelas negras, arroz...</p>
+                <div class="card--price">
+                    <div class="price">RD$460.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Burrito de pollo relleno de habichuelas negras, arroz, lechuga romana, pico de gallo, guacamole, cebolla y pimientos.
+                </ul>
+            </div>
+        </div>
+
+
+            <div class="card">
+                <img src="../IMG/m6.jpg" alt="">
+                <h4 class="card--title tag-popular">Burrito de Res</h4>
+            <p class="menu-item-description">Burrito de res con habichuelas negras, arroz, lechuga romana...</p>
+                <div class="card--price">
+                    <div class="price">RD$545.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Burrito de res con habichuelas negras, arroz, lechuga romana, pico de gallo, queso cheddar, guacamole, cebolla y pimientos.
+                </ul>
+            </div>
+        </div>
+
+            <div class="card">
+           <img src="../IMG/m7.jpg" alt="Bruschetta Clásica" class="">
+           <h4 class="card--title tag-popular">Chimichanga</h4>
+            <p class="menu-item-description">Deliciosa tortilla de harina rellena de chile de res...</p>
+                <div class="card--price">
+                    <div class="price">RD$390.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Deliciosa tortilla de harina rellena de chile de res, guacamole, salsa mexicana, queso danés y cheddar, perfectamente envuelta y frita al estilo chimichanga para un sabor crujiente y sabroso en cada bocado.
+                </ul>
+            </div>
+        </div>
+
+            <div class="card">
+           <img src="../IMG/m8.jpg" alt="Bruschetta Clásica" class="">
+            <h4 class="card--title tag-popular">Tacos de Pollo</h4>
+            <p class="menu-item-description">Tres tortillas de trigo con carne de pollo, lechuga romana...</p>
+                <div class="card--price">
+                    <div class="price">RD$380.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Tres tortillas de trigo con carne de pollo, lechuga romana, queso, pico de gallo, jalapeños, crema agria, cebolla y pimientos morrones.
+                </ul>
+            </div>
+        </div>
+          
+             <div class="card">
+           <img src="../IMG/m9.jpg" alt="Bruschetta Clásica" class="">
+            <h4 class="card--title tag-popular">Tacos de Res</h4>
+            <p class="menu-item-description">Tres tortillas de trigo rellenas de res, lechuga romana...</p>
+                <div class="card--price">
+                    <div class="price">RD$590.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+          <div class="hidden-details">
+            <ul class="ingredients">
+            Tres tortillas de trigo rellenas de res, lechuga romana, queso, pico de gallo, jalapeños, crema agria, cebolla y pimientos morrones.
+            </ul>
+           </div>
+         </div>
+           
+             <div class="card">
+           <img src="../IMG/m10.jpg" alt="Bruschetta Clásica" class="">
+            <h4 class="card--title tag-popular">Tacos de Camarones</h4>
+            <p class="menu-item-description">"Tortillas de trigo rellenas de tempura de camarones crujientes...</p>
+                <div class="card--price">
+                    <div class="price">RD$370.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div> 
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Tortillas de trigo rellenas de tempura de camarones crujientes, acompañadas de lechuga fresca, aguacate, pico de gallo, queso cheddar y un toque de spicy mayo, ofreciendo una mezcla perfecta de sabores y texturas.
+                </ul>
+            </div>
+        </div>
+         
+             <div class="card">
+           <img src="../IMG/m11.jpg" alt="Bruschetta Clásica" class="">
+            <h4 class="card--title tag-popular">Crespe de Pollo</h4>
+            <p class="menu-item-description">Deliciosos crepes rellenos de pollo molido y queso parmesano...</p>
+                <div class="card--price">
+                    <div class="price">RD$330.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>        
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Deliciosos crepes rellenos de pollo molido y queso parmesano, cubiertos con una rica salsa bechamel, ofreciendo una combinación jugosa y cremosa en cada bocado.
+                </ul>
+            </div>
+        </div>
+  
+             <div class="card">
+           <img src="../IMG/m12.jpg" alt="Bruschetta Clásica" class="">
+            <h4 class="card--title tag-popular">Crespe Mixto</h4>
+            <p class="menu-item-description">Delicioso crepe relleno de camarones en una suave salsa pomodoro..."</p>
+                <div class="card--price">
+                    <div class="price">RD$440.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+             <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Delicioso crepe relleno de camarones en una suave salsa pomodoro, con una capa de salsa bechamel, espolvoreado con queso parmesano y acompañado de tomates Barceló, creando una experiencia de sabor rica y sofisticada.
+               </ul>
+            </div>
+          </div>
+       </div>
     </main>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+  <div class="modal-content">
+     <span class="close">&times;</span>
+     <img id="modal-img" src="" alt="">
+     <h4 id="modal-title"></h4>
+     <p id="modal-description"></p>
+     <p id="modal-price" class="price"></p>
+     <button id="modal-add-btn" class="add-to-cart">Agregar al carrito</button>
+    </div>
+   </div>
+
+
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close">✖</button>
+        <h3>Carrito de Compras</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <span> Subtotal:</span> RD$0.00<br>
+            <span> ITBIS (18%):</span> RD$0.00<br>
+            <span> Envío:</span> RD$0.00<br>
+            <strong>Total: RD$0.00</strong>
+        </div>
+        <button class="clooose">Finalizar compra</button>
+    </div>
 
     <section class="section-footer">
         <footer class="footer">
@@ -310,12 +309,11 @@
             </div>
           </div>
           <div class="footer__bottom-text-box">
-            <p class="footer__bottom-text">IMPUESTOS INCLUIDOS</p>
+          <p class="footer__bottom-text">IMPUESTOS NO INCLUIDOS</p>
           </div>
         </footer>
       </section>
-      
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../JS/menu.js"></script>
+
+    <script src="../JS/in.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
                     <li><a href="../Login/Registro.php">CLOSED</a></li>
                     <div class="cart-icon">
                      🛒 <span>0</span>
-                    </div> 
+                    </div>                          
                   </ul>
           </nav>
         </div>
@@ -48,58 +48,74 @@
             </div>
 
         <div class="cards">
-            <div class="card"> 
-                <img src="../IMG/en1.jpg" alt="">
-                <h4 class="card--title">De Jamon y Queso</h4>
-                <p class="menu-item-description">Pechuga de pollo relleno de jamón y queso...</p>
+        <div class="card">
+                <img src="../IMG/d1.jpg" alt="">
+                <h4 class="card--title">El Madrugador</h4>
+                <p class="menu-item-description">Pan de agua con huevo, salami, queso frito, plátano...</p>
                 <div class="card--price">
-                    <div class="price">RD$495.00</div>
+                    <div class="price">RD$150.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Pechuga de pollo relleno de jamón y queso mozzarella bañado con salsa bechamel.
+                Pan de agua con huevo, salami, queso frito, plátano maduro, cebolla encurtida y aderezo rosado.               
+               </ul>
+            </div>
+        </div>
+
+            <div class="card">
+                <img src="../IMG/d2.jpg" alt="">
+                <h4 class="card--title">Desperatar Italiano</h4>
+                <p class="menu-item-description"> Pan de agua con mortadella Citerio a la plancha, huevo...</p>
+                <div class="card--price">
+                    <div class="price">RD$150.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Pan de agua con mortadella Citerio a la plancha, huevo, queso, tomate, lechuga y aderezo rosado.
                 </ul>
             </div>
         </div>
 
             <div class="card">
-                <img src="../IMG/en2.jpg" alt="">
-                <h4 class="card--title">De Platano Maduro</h4>
-                <p class="menu-item-description">Pechuga de pollo rellena de queso, plátano maduro y...</p>
+                <img src="../IMG/d3.jpg" alt="">
+                <h4 class="card--title">Gallo Pinto</h4>
+                <p class="menu-item-description"> Pan de agua con crujiente tocineta, huevo...</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$150.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Pechuga de pollo rellena de queso, plátano maduro y tocineta, en salsa teriyaki y crema.
+                Pan de agua con crujiente tocineta, huevo, queso danés y aderezo rosado.
                 </ul>
             </div>
         </div>
             
             <div class="card">
-                <img src="../IMG/en3.jpg" alt="">
-                <h4 class="card--title">De Pollo y Espinaca</h4>
-                <p class="menu-item-description">Pechuga de pollo rellena de queso mozzarella...</p>
+                <img src="../IMG/d4.jpg" alt="">
+                <h4 class="card--title">Wake Up</h4>
+                <p class="menu-item-description"> Pan de agua con tortilla de huevo, jamón, queso.</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$150.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Pechuga de pollo rellena de queso mozzarella, espinacas y salsa Da Vinci. Acompañado de la guarnición de su interés. 
+                Pan de agua con tortilla de huevo, jamón, queso americano, tomate, lechuga y aderezo rosado.
                 </ul>
             </div>
         </div>
             
             <div class="card">
-                <img src="../IMG/en4.jpg" alt="">
-                <h4 class="card--title">De Pollo</h4>
-                <p class="menu-item-description">Pechuga de pollo enrollada con tiras de tocino a la...</p>
+                <img src="../IMG/d5.jpg" alt="">
+                <h4 class="card--title">Cheesy Cheese</h4>
+                <p class="menu-item-description">Tortilla de huevo rellena de queso danés, mozzarella...</p>
                 <div class="card--price">
                     <div class="price">RD$450.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
@@ -107,15 +123,63 @@
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Pechuga de pollo enrollada con tiras de tocino a la parrilla y queso mozzarella, todo perfectamente cocido para ofrecer una combinación irresistible.
+                Tortilla de huevo rellena de queso danés, mozzarella y cheddar, tostada y papas.
                 </ul>
             </div>
-           </div>
-         </div>
-       </main>
+        </div>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
+            <div class="card">
+                <img src="../IMG/d6.jpg" alt="">
+                <h4 class="card--title">Smoke Salmon</h4>                
+                <p class="menu-item-description"> Ensalada fresca con aguacate, salmón ahumado, queso crema...</p>
+                <div class="card--price">
+                    <div class="price">RD$350.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Ensalada fresca con aguacate, salmón ahumado, queso crema, puerro, alcaparras, cebolla roja, pepino y lechuga mixta, aderezada con aceite de oliva y acompañada de huevos pochados y rúcula para una combinación deliciosa y equilibrada.
+                </ul>
+            </div>
+        </div>
+
+            <div class="card">
+                <img src="../IMG/d7.jpg" alt="">
+                <h4 class="card--title">Parmesan Toast</h4>
+                <p class="menu-item-description">Aguacate, queso parmesano, tocineta, aceite...</p>
+                <div class="card--price">
+                    <div class="price">RD$345.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Aguacate, queso parmesano, tocineta, aceite de oliva y huevos pochados.
+                </ul>
+            </div>
+        </div>
+
+            <div class="card">
+                <img src="../IMG/d8.jpg" alt="">
+                <h4 class="card--title">Dry Tomatoes</h4>
+                <p class="menu-item-description">Aguacate, queso mozzarella en agua, tomates secos, pesto...</p>
+                <div class="card--price">
+                    <div class="price">RD$295.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Aguacate, queso mozzarella en agua, tomates secos, pesto, vinagre balsámico, aceite de oliva, huevos pochados, lechuga mixta y rúcula.
+                </ul>
+            </div>
+        </div>
+        </div>
+    </main>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
   <div class="modal-content">
      <span class="close">&times;</span>
      <img id="modal-img" src="" alt="">

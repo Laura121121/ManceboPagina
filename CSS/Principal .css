@@ -22,7 +22,7 @@
 .section__container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 5rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
 .section__header {
@@ -66,12 +66,8 @@ a {
   transition: 0.3s;
 }
 
-html,
 body {
   scroll-behavior: smooth;
-}
-
-body {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -264,6 +260,133 @@ nav {
   font-size: 3rem;
 }
 
+.bodys {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--header-font-1);
+  color: var(--primary-color);
+  text-align: center;
+  line-height: 8rem;
+  text-shadow: 2px 2px var(--secondary-color);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  height: 200px; /* Altura fija para todas las cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar legibilidad */
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imágenes de fondo diferentes para cada card */
+.card:nth-child(1) {
+  background: url('../IMG/cafe.jpg') center/cover no-repeat;
+}
+
+.card:nth-child(2) {
+  background: url('../IMG/pizza.jpg') center/cover no-repeat;
+}
+
+.card:nth-child(3) {
+  background: url('../IMG/brownie.jpg') center/cover no-repeat;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.card p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.ver-mas {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.ver-mas:hover {
+  background-color: white;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+  }
+  
+  .card {
+      margin-bottom: 20px;
+  }
+}
+
 .banner__container {
   display: grid;
   gap: 1rem;
@@ -279,28 +402,28 @@ nav {
 }
 
 .banner__card:nth-child(1) {
-  background-image: url("../IMG/ensalada\ de\ churrasco.webp");
+  background-image: url("../IMG/c8.jpg");
 }
 
 .banner__card:nth-child(2) {
-  background-image: url("../IMG/a6.jpg");
+  background-image: url("../IMG/Hazelnut.jpg");
 }
 
 .banner__card:nth-child(3) {
-  background-image: url("../IMG/tacos\ de\ res.webp");
+  background-image: url("../IMG/Egg\ Waffle.jpg");
 }
 
 .banner__card p {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--white);
+  color: rgb(253, 251, 251);
 }
 
 .banner__card h4 {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--white);
+  color: rgb(184, 94, 20);
 }
 
 .order__container h3 {
@@ -341,6 +464,7 @@ nav {
 }
 
 .order__card img {
+  border-radius: 0.5rem;
   max-width: 250px;
   margin-inline: auto;
   margin-bottom: 2rem;

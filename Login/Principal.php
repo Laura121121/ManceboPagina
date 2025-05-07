@@ -16,7 +16,7 @@
       <nav>
         <div class="nav__header">
           <div class="nav__logo">
-          <a href="../HTML/Principal.php">
+          <a href="../Login/Principal.php">
           <img
                 src="../IMG/Logo.png"  height="170"
                 alt="logo"
@@ -35,9 +35,9 @@
         </div>
         <ul class="nav__links" id="nav-links">
             
-          <li><a href="../HTML/Principal.php">INICIO</a></li>
-          <li><a href="#special">ESPECIALES</a></li>
-          <li><a href="../HTML/Menu.php">MENU</a></li>
+        <li><a href="../Login/Principal.php">INICIO</a></li>
+        <li><a href="#special">ESPECIALES</a></li>
+          <li><a href="../HTML/Desayuno.php">MENU</a></li>
           <li><a href="../HTML/Historia.php">HISTORIA</a></li>
           <li><a href="../Login/Registro.php">CLOSED</a></li>
           <div class="cart-icon">
@@ -48,7 +48,7 @@
       <div class="section__container header__container" id="home">
         
         <div class="header__content">
-          <h2>ES UN BUEN MOMENTO PARA UNA DELICIOSA HAMBURGUESA</h2>
+          <h2>DISFRUTA DE NUESTRAS SEMANAS LLENAS DE TEMATICAS</h2>
           <h1>SEMANA <span>DE <br/> LA HAMBURGUESA</span></h1>
         </div>
         <div class="carousel">
@@ -58,10 +58,10 @@
           <img src="../IMG/a1.jpg" alt="Imagen 1">
         </li>
         <li class="carousel-slide">
-          <img src="../IMG/a1.jpg" alt="Imagen 2">
+          <img src="../IMG/deditos de pollo.jpg" alt="Imagen 2">
         </li>
         <li class="carousel-slide">
-          <img src="../IMG/a1.jpg" alt="Imagen 3">
+          <img src="../IMG/buffalopizza.jpg" alt="Imagen 3">
         </li>
       </ul>
     </div>
@@ -77,19 +77,59 @@
   </div>
       </div>
     </header>
+  <div class="bodys">
+    <div class="container">
+        <h1 class="titulo">Nuestra Identidad Corporativa</h1>
+        
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Misión</h2>
+                    <p>Ofrecer una experiencia culinaria única.<br>
+                       Crear un ambiente relajado y vanguardista.<br>
+                       Productos de calidad a precios accesibles.
+                  </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h2>Visión</h2>
+                    <p>Ser un referente gastronómico<br>
+                       Expandir su influencia<br> 
+                       Crear un espacio acogedor <br> 
+                  </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h2>Valores</h2>
+                    <p>
+                        Integridad,
+                        Innovación<br>
+                         Excelencia,
+                        Calidad<br>
+                        Trabajo en equipo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <section class="section__container banner__container" id="special">
       <div class="banner__card">
-        <p>LA ENSALADA MAS POPULAR</p>
-        <h4>ENSALADA DE CHURRASCO</h4>
+        <p>LA PROTEINA MAS POPULAR</p>
+        <h4>CHURRASCO</h4>
       </div>
       <div class="banner__card">
-        <p>MAS PIEZAS, MAS SABOR</p>
-        <h4>TUNA<br />POKE</h4>
+        <p>MAS DULZOR, MAS SABOR</p>
+        <h4>HAZELNUT</h4>
       </div>
       <div class="banner__card">
-        <p>ENCHILATE CON SU FRESCURA</p>
-        <h4>TACOS<BR> DE RES</h4>
+        <p>ENAMORATE CON SU FRESCURA</p>
+        <h4>WAFFLE</h4>
       </div>
     </section>
 
@@ -108,7 +148,6 @@
             Pasta de su preferencia al dente, preparada
              en salsa Alfredo con camarones.<BR> RD$405.00
           </p>
-          <button class="btn">ORDENAR</button>
         </div>
         <div class="order__card">
           <img src="../IMG/buffalo.jpg" alt="order" />
@@ -118,7 +157,6 @@
              de pollo picante, salsa bechamel, queso gouda,
               blue cheese, cheddar y puerro. <BR> RD$375.00
           </p>
-          <button class="btn">ORDENAR</button>
         </div>
         <div class="order__card">
           <img src="../IMG/churra.jpg" alt="order" />
@@ -127,7 +165,7 @@
             10 oz de jugoso corte de churrasco con sazón 
             de parrilla acompañado de salsa chimichurri. <BR> RD$1,200.00
           </p>
-          <button class="btn">ORDENAR</button>
+          
         </div>
       </div>
     </section>
@@ -238,7 +276,7 @@
           </div>
         </div>
         <div class="footer__bottom-text-box">
-          <p class="footer__bottom-text">IMPUESTOS INCLUIDOS</p>
+          <p class="footer__bottom-text">IMPUESTOS NO INCLUIDOS</p>
         </div>
       </footer>
     </section>

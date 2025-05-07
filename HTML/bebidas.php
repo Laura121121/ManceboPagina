@@ -2,17 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/bebidas.css">
-    <title>desayuno</title>
+    <title>Square One</title>
+    <link rel="stylesheet" href="../CSS/postres.css">
 </head>
 <body>
-    <!-- Header with navigation -->
-    <header>
+<header>
         <div class="container">
             <nav class="navbar">
                 <div class="nav__logo">
-                <a href="../HTML/Principal.php">
+                <a href="../Login/Principal.php">
                 <img
                         src="../IMG/Logo.png"  height="170"
                         alt="logo"
@@ -22,25 +20,21 @@
                   </div>
                 
                   <ul class="nav-links">
-                    <li><a href="../HTML/Principal.php">INICIO</a></li>
-                    <li><a href="#special">ESPECIALES</a></li>
-                    <li><a href="../HTML/Menu.php">MENU</a></li>
-                    <li><a href="#event">EVENTOS</a></li>
+                  <li><a href="../Login/Principal.php">INICIO</a></li>
+                    <li><a href="../HTML/entradas.php">MENU</a></li>
                     <li><a href="../HTML/Historia.php">HISTORIA</a></li>
-                    <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
-                          </ul>
-                
-                <button class="order-now-btn">Ordenar Ahora</button>
-            </nav>
+                    <li><a href="../Login/Registro.php">CLOSED</a></li>
+                    <div class="cart-icon">
+                     🛒 <span>0</span>
+                    </div>                         
+                  </ul>
+          </nav>
         </div>
     </header>
-    
-    <!-- Menu content -->
-    <main class="menu-content">
-        <div class="container">
-            <!-- Category filters -->
-            <div class="category-filters">
-                <a href="../HTML/Menu.php"><button class="category-btn active">Desayunos</button></a>
+
+    <main>
+    <div class="category-filters">
+                <a href="../HTML/Desayuno.php"><button class="category-btn active">Desayunos</button></a>
                <a href="../HTML/entradas.php"><button class="category-btn">Entradas</button></a>
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
@@ -52,532 +46,299 @@
                 <a href="../HTML/bebidas.php"><button class="category-btn">Bebidas</button></a>
                 <a href="../HTML/verificacion.php"><button class="category-btn">Bebidas Alcoholicas</button></a>  
             </div>
-            
-            <!-- Menu items grid -->
-            <div class="menu-grid">
-                <!-- Menu item 1 -->
-                <div class="menu-item">
-                    <img src="../IMG/b1.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
+
+        <div class="cards">
+            <div class="card">
+           <img src="../IMG/b1.jpg" alt="Bruschetta Clásica" class="">
+            <h4 class="card--title tag-popular">Salad</h4>
+            <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
                 </div>
-                
-                <!-- Menu item 2 -->
-                <div class="menu-item">
-                    <img src="../IMG/b2.jpg" alt="Bruschetta Clásica" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Bruschetta Clásica</h3>
-                            <span class="menu-item-price">$8.95</span>
-                        </div>
-                        <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-vegetarian">Vegetariano</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Menu item 3 -->
-                <div class="menu-item">
-                    <img src="../IMG/b3.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../IMG/b4.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../IMG/b5.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../IMG/b6.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../IMG/b7.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../IMG/b8.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../IMG/b9.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="../IMG/b10.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>  <div class="menu-item">
-                    <img src="../IMG/b11.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>  
-                <div class="menu-item">
-                    <img src="../IMG/b12.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>  
-                <div class="menu-item">
-                    <img src="../IMG/b13.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>  
-                <div class="menu-item">
-                    <img src="../IMG/b14.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
             </div>
-            <div class="menu-item">
-                <img src="../IMG/b15.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b16.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b17.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b18.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b19.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b20.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b21.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  
-            <div class="menu-item">
-                <img src="../IMG/b22.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b23.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b24.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b25.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b26.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b27.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b28.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b29.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b30.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  
-            <div class="menu-item">
-                <img src="../IMG/b31.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b32.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  <div class="menu-item">
-                <img src="../IMG/b33.jpg" alt="Paella Valenciana" class="menu-item-image">
-                <div class="menu-item-content">
-                    <div class="menu-item-header">
-                        <h3 class="menu-item-title">Paella Valenciana</h3>
-                        <span class="menu-item-price">$25.95</span>
-                    </div>
-                    <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                    <div class="menu-item-footer">
-                        <div>
-                            <span class="menu-tag tag-popular">Popular</span>
-                        </div>
-                        <button class="item-order-btn">Ordenar</button>
-                    </div>
-                </div>
-            </div>  
 
+            <div class="card">
+                <img src="../IMG/b2.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
 
+            <div class="card">
+                <img src="../IMG/b3.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="../IMG/b4.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="../IMG/b5.jpg" alt="">
+                <h4 class="card--title">Pizza</h4>
+                <div class="card--price">
+                    <div class="price">RD$450.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
 
-
-
+            <div class="card">
+                <img src="../IMG/b6.jpg" alt="">
+                <h4 class="card--title">Pasta</h4>
+                <div class="card--price">
+                    <div class="price">RD$299.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b7.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b8.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b9.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b10.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b11.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b12.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b13.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b14.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b15.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b16.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b17.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b18.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b19.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b20.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b21.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
+            <div class="card">
+                <img src="../IMG/b22.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b23.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b24.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b25.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b26.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b28.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+              </div>
+                <div class="card">
+                <img src="../IMG/b29.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b30.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b31.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b32.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+                </div>
+                <div class="card">
+                <img src="../IMG/b33.jpg" alt="">
+                <h4 class="card--title">Salad</h4>
+                <div class="card--price">
+                    <div class="price">RD$375.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+                </div>
+            </div>
         </div>
     </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <h4 id="modal-title"></h4>
+    <p id="modal-description"></p>
+    <p id="modal-price" class="price"></p>
+    <button id="modal-add-btn" class="add-to-cart">Agregar al carrito</button>
+  </div>
+</div>
+
+
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close">✖</button>
+        <h3>Carrito de Compras</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <span> Subtotal:</span> RD$0.00<br>
+            <span> ITBIS (18%):</span> RD$0.00<br>
+            <span> Envío:</span> RD$0.00<br>
+            <strong>Total: RD$0.00</strong>
+        </div>
+        <button class="clooose">Finalizar compra</button>
+    </div>
+
     <section class="section-footer">
         <footer class="footer">
           <div class="footer-group-container">
@@ -614,12 +375,12 @@
             </div>
           </div>
           <div class="footer__bottom-text-box">
-            <p class="footer__bottom-text">IMPUESTOS INCLUIDOS</p>
+          <p class="footer__bottom-text">IMPUESTOS NO INCLUIDOS</p>
           </div>
         </footer>
       </section>
-      
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../JS/menu.js"></script>
+
+
+    <script src="../JS/in.js"></script>
 </body>
 </html>

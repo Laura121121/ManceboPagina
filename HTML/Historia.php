@@ -12,7 +12,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="nav__logo">
-                <a href="../HTML/Principal.php">
+                <a href="../Login/Principal.php">
                 <img
                         src="../IMG/Logo.png"  height="170"
                         alt="logo"
@@ -22,15 +22,14 @@
                   </div>
                 
                   <ul class="nav-links">
-                    <li><a href="../HTML/Principal.php">INICIO</a></li>
-                    <li><a href="#special">ESPECIALES</a></li>
-                    <li><a href="../HTML/Menu.php">MENU</a></li>
-                    <li><a href="#event">EVENTOS</a></li>
+                    <li><a href="../Login/Principal.php">INICIO</a></li>
+                    <li><a href="../HTML/entradas.php">MENU</a></li>
                     <li><a href="../HTML/Historia.php">HISTORIA</a></li>
-                    <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
-                          </ul>
-                
-                <button class="order-now-btn">Ordenar Ahora</button>
+                    <li><a href="../Login/Registro.php">CLOSED</a></li>
+                    <div class="cart-icon">
+                     🛒 <span>0</span>
+                    </div> 
+                </ul>
             </nav>
         </div>
     </header>
@@ -58,5 +57,6 @@
             <img class="img" src="../IMG/creador.jpeg" alt="Blogger">
         </div>
     </div>
+    <script src="../Login/in.js"></script>
 </body>
 </html>

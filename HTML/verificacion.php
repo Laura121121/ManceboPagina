@@ -61,40 +61,12 @@
         function confirmAge(isAdult) {
             if (!isAdult) {
                 alert("No tienes acceso a este sitio.");
-                window.location.href = "http://127.0.0.1:5501/HTML/Principal.html";
+                window.location.href = "http://localhost/SQ1%20-%20copia/Login/Principal.php";
             } else {
                 alert("Bienvenido al sitio.");
-                window.location.href = "http://127.0.0.1:5501/HTML/bebidasalcol.html";
+                window.location.href = "http://localhost/SQ1%20-%20copia/HTML/bebidasalcol.php";
             }
         }
     </script>
 </body>
 </html>
-
-<?php
-include("connection.php");
-
-$msg='';
-if(isset($_POST['submit'])){
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    $select1 = "SELECT * FROM `users` WHERE email = '$email' AND password= '$password'";
-    $select_user = mysqli_query($conn,$select1);
-    if(mysqli_num_rows($select_user)> 0){
-        $row1 = mysqli_fetch_assoch($select_user);
-        if($row1['user_type'] == 'user'){
-            $_SESSION['user'] = $row1['email'];
-            $_SESSION['id'] = $row1['id'];
-            header('location:user.php');
-        }
-        elseif($row1['user_type'] =='admin'){
-            $_SESSION['admin'] = $row1['email'];
-            $_SESSION['id'] = $row1['id'];
-            header('location:user.php');
-        }
-        else{
-            $msg= "Contraseña incorrecta, intente de nuevo";
-        }
-    }
-}

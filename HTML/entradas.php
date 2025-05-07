@@ -2,17 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/entradas.css">
-    <title>entradas</title>
+    <title>Square One</title>
+    <link rel="stylesheet" href="../CSS/postres.css">
 </head>
 <body>
-    <!-- Header with navigation -->
-    <header>
+<header>
         <div class="container">
             <nav class="navbar">
                 <div class="nav__logo">
-                <a href="../HTML/Principal.php">
+                <a href="../Login/Principal.php">
                 <img
                         src="../IMG/Logo.png"  height="170"
                         alt="logo"
@@ -22,25 +20,21 @@
                   </div>
                 
                   <ul class="nav-links">
-                    <li><a href="../HTML/Principal.php">INICIO</a></li>
-                    <li><a href="#special">ESPECIALES</a></li>
-                    <li><a href="../HTML/Menu.php">MENU</a></li>
-                    <li><a href="#event">EVENTOS</a></li>
+                  <li><a href="../Login/Principal.php">INICIO</a></li>
+                    <li><a href="../HTML/entradas.php">MENU</a></li>
                     <li><a href="../HTML/Historia.php">HISTORIA</a></li>
-                    <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
-                          </ul>
-                
-                <button class="order-now-btn">Carrito</button>
-            </nav>
+                    <li><a href="../Login/Registro.php">CLOSED</a></li>
+                    <div class="cart-icon">
+                     🛒 <span>0</span>
+                    </div>                          
+                  </ul>
+          </nav>
         </div>
     </header>
-    
-    <!-- Menu content -->
-    <main class="menu-content">
-        <div class="container">
-            <!-- Category filters -->
-            <div class="category-filters">
-                <a href="../HTML/Menu.php"><button class="category-btn active">Desayunos</button></a>
+
+    <main>
+    <div class="category-filters">
+                <a href="../HTML/Desayuno.php"><button class="category-btn active">Desayunos</button></a>
                <a href="../HTML/entradas.php"><button class="category-btn">Entradas</button></a>
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
@@ -52,97 +46,161 @@
                 <a href="../HTML/bebidas.php"><button class="category-btn">Bebidas</button></a>
                 <a href="../HTML/verificacion.php"><button class="category-btn">Bebidas Alcoholicas</button></a>  
             </div>
-            
-            <!-- Menu items grid -->
-            <div class="menu-grid">
-                <!-- Menu item 1 -->
-                <div class="menu-item">
-                    <img src="../IMG/e1.jpg" alt="Carpaccio de Res" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                         <h3 class="menu-item-title">Carpaccio de Res</h3>
-                            <span class="menu-item-price">$12.95</span>
-                        </div>
-                        <p class="menu-item-description">Finas láminas de res, alcaparras, queso parmesano y rúcula</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="cart-btn" onclick="agregarAlCarrito('Carpaccio de Res', 12.95)">
-                                <i class="ri-shopping-cart-line"></i> +
-                            </button>                        </div>
-                    </div>
-                </div>
 
-                <script>
-                    let carrito = [];
-                    function agregarAlCarrito(nombre, precio) {
-                        let item = carrito.find(p => p.nombre === nombre);
-                        if (item) {
-                            item.cantidad++;
-                        } else {
-                            carrito.push({ nombre, precio, cantidad: 1 });
-                        }
-                        console.log(carrito);
-                    }
-                </script>
-                
-                <!-- Menu item 2 -->
-                <div class="menu-item">
-                    <img src="../IMG/e2.jpg" alt="Bruschetta Clásica" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Bruschetta Clásica</h3>
-                            <span class="menu-item-price">$8.95</span>
-                        </div>
-                        <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-vegetarian">Vegetariano</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Menu item 3 -->
-                <div class="menu-item">
-                    <img src="../IMG/e3.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Menu item 3 -->
-                 <div class="menu-item">
-                    <img src="../IMG/e4.jpg" alt="Paella Valenciana" class="menu-item-image">
-                    <div class="menu-item-content">
-                        <div class="menu-item-header">
-                            <h3 class="menu-item-title">Paella Valenciana</h3>
-                            <span class="menu-item-price">$25.95</span>
-                        </div>
-                        <p class="menu-item-description">Tradicional arroz español con mariscos, pollo y azafrán</p>
-                        <div class="menu-item-footer">
-                            <div>
-                                <span class="menu-tag tag-popular">Popular</span>
-                            </div>
-                            <button class="item-order-btn">Ordenar</button>
-                        </div>
-                    </div>
-                </div>
+        <div class="cards">
+            <div class="card"> 
+                <img src="../IMG/e1.jpg" alt="">
+                <h4 class="card--title tag-popular">Pollo Honey</h4>
+                <p class="menu-item-description">Tiras de pechuga de pollo con miel y salsa BBQ...</p>
+                <div class="card--price">
+                    <div class="price">RD$285.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Tiras de pechuga de pollo con miel y salsa BBQ, acompañadas de papas fritas.
+                </ul>
             </div>
         </div>
+
+            <div class="card">
+                <img src="../IMG/e2.jpg" alt="">
+                <h4 class="card--title">Nachos de Pollo</h4>
+                <p class="menu-item-description">Pollo, pico de gallo, guacamole, queso fundido...</p>
+                <div class="card--price">
+                    <div class="price">RD$480.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Pollo, pico de gallo, guacamole, queso fundido, crema agria y salsa bechamel.
+                </ul>
+            </div>
+        </div>
+            
+            <div class="card">
+                <img src="../IMG/e3.jpg" alt="">
+                <h4 class="card--title">Nachos Mixtos</h4>
+                <p class="menu-item-description">Carne molida de res, pollo, pico de gallo, guacamole...</p>
+                <div class="card--price">
+                    <div class="price">RD$530.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Carne molida de res, pollo, pico de gallo, guacamole, queso fundido, crema agria y salsa bechamel.
+                </ul>
+            </div>
+        </div>
+            
+            <div class="card">
+                <img src="../IMG/e4.jpg" alt="">
+                <h4 class="card--title">Dip de Espinaca</h4>
+                <p class="menu-item-description">Deliciosa mezcla de espinacas, queso ricotta y...</p>
+                <div class="card--price">
+                    <div class="price">RD$250.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Deliciosa mezcla de espinacas, queso ricotta y queso parmesano servido con pan pita.
+                </ul>
+            </div>
+        </div>
+
+            <div class="card"> 
+                <img src="../IMG/e5.jpg" alt="">
+                <h4 class="card--title">Palitos de Mozzarella</h4>
+                <p class="menu-item-description">Bastoncitos de queso mozarella empanizados acompañados...</p>
+                <div class="card--price">
+                    <div class="price">RD$240.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Bastoncitos de queso mozarella empanizados acompañados de salsa marinara y ranch.
+                </ul>
+            </div>
+        </div>
+
+            <div class="card"> 
+                <img src="../IMG/e6.jpg" alt="">
+                <h4 class="card--title">BBQ Wings</h4>
+                <p class="menu-item-description">Alitas en salsa BBQ fritas, acompañadas de salsa ranch...</p>
+                <div class="card--price">
+                    <div class="price">RD$400.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Alitas en salsa BBQ fritas, acompañadas de salsa ranch, zanahoria, apio y papas fritas. 
+                </ul>
+            </div>
+        </div>
+
+            <div class="card"> 
+                <img src="../IMG/e7.jpg" alt="">
+                <h4 class="card--title">Empanada de Catibía</h4>
+                <p class="menu-item-description">Empanadas de catibías, rellenas de una mezcla de...</p>
+                <div class="card--price">
+                    <div class="price">RD$80.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Empanadas de catibías, rellenas de una mezcla de res, pollo, cebolla y especias, envueltas en una masa crujiente.                
+            </ul>
+            </div>
+        </div>
+
+            <div class="card"> 
+                <img src="../IMG/e8.jpg" alt="">
+                <h4 class="card--title">Mofonguitos de Pollo</h4>
+                <p class="menu-item-description">Queso cheddar derretido, aderezo rosado, salsa pomodoro...</p>
+                <div class="card--price">
+                    <div class="price">RD$310.00</div>
+                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
+            </div>
+            <!-- Contenido oculto para el modal -->
+            <div class="hidden-details">
+                <ul class="ingredients">
+                Queso cheddar derretido, aderezo rosado, salsa pomodoro, carne de res, plátano verde y pico de gallo fresco.                </ul>
+            </div>
+          </div>
+       </div>
     </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+  <div class="modal-content">
+     <span class="close">&times;</span>
+     <img id="modal-img" src="" alt="">
+     <h4 id="modal-title"></h4>
+     <p id="modal-description"></p>
+     <p id="modal-price" class="price"></p>
+     <button id="modal-add-btn" class="add-to-cart">Agregar al carrito</button>
+    </div>
+   </div>
+
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close">✖</button>
+        <h3>Carrito de Compras</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <span> Subtotal:</span> RD$0.00<br>
+            <span> ITBIS (18%):</span> RD$0.00<br>
+            <span> Envío:</span> RD$0.00<br>
+            <strong>Total: RD$0.00</strong>
+        </div>
+        <button class="clooose">Finalizar compra</button>
+    </div>
 
     <section class="section-footer">
         <footer class="footer">
@@ -180,12 +238,11 @@
             </div>
           </div>
           <div class="footer__bottom-text-box">
-            <p class="footer__bottom-text">IMPUESTOS INCLUIDOS</p>
+          <p class="footer__bottom-text">IMPUESTOS NO INCLUIDOS</p>
           </div>
         </footer>
       </section>
-      
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../JS/menu.js"></script>
+
+    <script src="../JS/in.js"></script>
 </body>
 </html>

@@ -11,19 +11,24 @@ if (isset($_POST['submit'])) {
     if ($password !== $cpassword) {
         $msg = "Las contraseñas no coinciden.";
     } else {
-        $select = "SELECT * FROM `users` WHERE email = '$email'";
-        $select_user = mysqli_query($conn, $select);
+        // Hashea la contraseña
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        if (mysqli_num_rows($select_user) > 0) {
-            $msg = "¡El usuario ya existe!";
+        // Verificar si el correo o contraseña ya existen
+        $check = "SELECT * FROM `users` WHERE email = '$email' OR password = '$hashedPassword'";
+        $result = mysqli_query($conn, $check);
+
+        if (mysqli_num_rows($result) > 0) {
+            $msg = "El correo o la contraseña ya están en uso.";
         } else {
-            $insert1 = "INSERT INTO `users`(`name`, `email`, `password`) VALUES ('$name','$email','$password')";
-            mysqli_query($conn, $insert1);
+            $insert = "INSERT INTO `users`(`name`, `email`, `password`) VALUES ('$name', '$email', '$hashedPassword')";
+            mysqli_query($conn, $insert);
             header('Location: login.php');
             exit();
         }
     }
 }
+
 ?>
 
 <!DOCTYPE html>
