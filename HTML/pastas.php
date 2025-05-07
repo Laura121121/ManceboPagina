@@ -39,7 +39,6 @@
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
                 <a href="../HTML/envoltinis.php"><button class="category-btn">Envoltinis</button></a>
-                <a href="../HTML/asiaticos.php"><button class="category-btn">Asiatico</button></a>
                 <a href="../HTML/carnes.php"><button class="category-btn">Carnes</button></a>
                 <a href="../HTML/pastas.php"><button class="category-btn">Pastas</button></a>
                 <a href="../HTML/postres.php"><button class="category-btn">Postres</button></a>
@@ -50,8 +49,8 @@
         <div class="cards">
             <div class="card">
            <img src="../IMG/p1.jpg" alt="Bruschetta Clásica" class="">
-            <h4 class="card--title tag-popular">Salad</h4>
-            <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+            <h4 class="card--title tag-popular">Square One</h4>
+            <p class="menu-item-description">Pasta de su preferencia al dente preparada con pechuga...</p>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
@@ -59,7 +58,7 @@
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Pasta de su preferencia al dente preparada con pechuga de pollo, vino blanco, tomates secos en salsa de crema de ajo y queso parmesano.
                 </ul>
             </div>
         </div>
@@ -67,75 +66,80 @@
             <div class="card">
               
                 <img src="../IMG/p2.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Da Vinci</h4>
+                <p class="menu-item-description">Jugosa pechuga de pollo marinada a la plancha, ajo...</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$370.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Jugosa pechuga de pollo marinada a la plancha, ajo y hongos en salsa de vino, con Pasta de su preferencia espolvoreado con queso parmesano.
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/p3.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Alfredo con Camarones</h4>
+                <p class="menu-item-description">Pasta de su preferencia al dente, preparada en salsa...</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$405.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Pasta de su preferencia al dente, preparada en salsa Alfredo con camarones.
                 </ul>
             </div>
         </div>
             
             <div class="card">
                 <img src="../IMG/p4.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Carbonara</h4>
+                <p class="menu-item-description">Pasta de su preferencia carbonara con tocineta...</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$370.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Pasta de su preferencia carbonara con tocineta, pollo y queso rallado.
                 </ul>
             </div>
         </div>
             
             <div class="card">
                 <img src="../IMG/p5.jpg" alt="">
-                <h4 class="card--title">Pizza</h4>
+                <h4 class="card--title">Pesto</h4>
+                <p class="menu-item-description">Jugosa pasta al pesto, combinada con tiernos trocitos...</p>
                 <div class="card--price">
-                    <div class="price">RD$450.00</div>
+                    <div class="price">RD$345.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Jugosa pasta al pesto, combinada con tiernos trocitos de pollo y bañada en una suave salsa bechamel, creando una mezcla cremosa y sabrosa de sabores
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/p6.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Pasta 4 Quesos con Pollo</h4>
+                <p class="menu-item-description">Pasta de su preferencia al dente bañada en nuestra...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$385.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Pasta de su preferencia al dente bañada en nuestra salsa especial de queso con tiras de pechuga de pollo a la plancha.
                 </ul>
             </div>
         </div>

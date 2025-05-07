@@ -39,7 +39,6 @@
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
                 <a href="../HTML/envoltinis.php"><button class="category-btn">Envoltinis</button></a>
-                <a href="../HTML/asiaticos.php"><button class="category-btn">Asiatico</button></a>
                 <a href="../HTML/carnes.php"><button class="category-btn">Carnes</button></a>
                 <a href="../HTML/pastas.php"><button class="category-btn">Pastas</button></a>
                 <a href="../HTML/postres.php"><button class="category-btn">Postres</button></a>

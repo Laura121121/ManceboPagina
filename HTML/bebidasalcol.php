@@ -39,193 +39,119 @@
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
                 <a href="../HTML/envoltinis.php"><button class="category-btn">Envoltinis</button></a>
-                <a href="../HTML/asiaticos.php"><button class="category-btn">Asiatico</button></a>
                 <a href="../HTML/carnes.php"><button class="category-btn">Carnes</button></a>
                 <a href="../HTML/pastas.php"><button class="category-btn">Pastas</button></a>
                 <a href="../HTML/postres.php"><button class="category-btn">Postres</button></a>
                 <a href="../HTML/bebidas.php"><button class="category-btn">Bebidas</button></a>
                 <a href="../HTML/verificacion.php"><button class="category-btn">Bebidas Alcoholicas</button></a>  
             </div>
-
+            
         <div class="cards">
             <div class="card">
            <img src="../IMG/ba1.jpg" alt="Bruschetta Clásica" class="">
-            <h4 class="card--title tag-popular">Salad</h4>
-            <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+            <h4 class="card--title tag-popular">Sangria</h4>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$310.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba2.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Cuba Libre</h4>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$160.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba3.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Piña Colada </h4>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$230.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
             
             <div class="card">
                 <img src="../IMG/ba4.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Orgasmo</h4>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$300.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
-            </div>
+            </div>      
         </div>
             
             <div class="card">
                 <img src="../IMG/ba5.jpg" alt="">
-                <h4 class="card--title">Pizza</h4>
+                <h4 class="card--title">Copa de Mimosa</h4>
                 <div class="card--price">
-                    <div class="price">RD$450.00</div>
+                    <div class="price">RD$220.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba6.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Mexican Buldog Strawberry</h4>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$510.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba7.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Moscow Mule</h4>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$260.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba8.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Mexican Buldog Limon</h4>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$510.00</div>
                        <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba9.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Sex On The Beach</h4>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$360.00</div>
                        <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba10.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Cosmopolitan</h4>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$230.00</div>
                          <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba11.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Long Island Ice Tea</h4>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$300.00</div>
                         <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/ba12.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title">Mexican Buldog Mango</h4>
                 <div class="card--price">
                     <div class="price">RD$299.00</div>
                        <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-            </div>
-            <!-- Contenido oculto para el modal -->
-            <div class="hidden-details">
-                <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
             </div>
           </div>
         </div>

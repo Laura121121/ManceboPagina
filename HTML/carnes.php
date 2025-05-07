@@ -39,7 +39,6 @@
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
                 <a href="../HTML/envoltinis.php"><button class="category-btn">Envoltinis</button></a>
-                <a href="../HTML/asiaticos.php"><button class="category-btn">Asiatico</button></a>
                 <a href="../HTML/carnes.php"><button class="category-btn">Carnes</button></a>
                 <a href="../HTML/pastas.php"><button class="category-btn">Pastas</button></a>
                 <a href="../HTML/postres.php"><button class="category-btn">Postres</button></a>
@@ -50,56 +49,56 @@
         <div class="cards">
             <div class="card">
                 <img src="../IMG/c1.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">New York Steak</h4>
+                <p class="menu-item-description">Jugoso corte de res brangus importado, acompañado de...</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$1200.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Jugoso corte de res brangus importado, acompañado de unos crocantes tostones.
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c2.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Pechuga de Pollo Parmesana</h4>
+                <p class="menu-item-description">Deliciosa pechuga de pollo empanizado en salsa marinara con...</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$670.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Deliciosa pechuga de pollo empanizado en salsa marinara con queso parmesano y mozzarella acompañado de papas fritas.
                 </ul>
             </div>
         </div>
             
             <div class="card">
                 <img src="../IMG/c3.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Mero al Grill</h4>
+                <p class="menu-item-description">Mero al grill con hierbas provenzales y sazón de la casa en...</p>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$390.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Mero al grill con hierbas provenzales y sazón de la casa en salsa menier acompañado de puré de papa. 
                 </ul>
             </div>
         </div>
             
             <div class="card">
                 <img src="../IMG/c4.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Pechuga a la crema</h4>
+                <p class="menu-item-description">Jugosa pechuga de pollo a la plancha, cebolla y pimientos cocidos...</p>
                 <div class="card--price">
                     <div class="price">RD$450.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
@@ -107,55 +106,54 @@
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
+                Jugosa pechuga de pollo a la plancha, cebolla y pimientos cocidos al vino bañados en salsa bechamel.                </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c5.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Pechuga Teriyaki</h4>
+                <p class="menu-item-description">Deliciosa pechuga de pollo a la plancha, glaseada con una...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$480.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Deliciosa pechuga de pollo a la plancha, glaseada con una mezcla de salsa teriyaki, salsa de soya y una suave salsa blanca, creando una combinación rica y equilibrada de sabores.
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c6.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Filete de Res al Grill</h4>
+                <p class="menu-item-description">8oz de filete de res a la parrilla cocido a fuego...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$855.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
-                </ul>
+                8oz de filete de res a la parrilla cocido a fuego lento acompañado de vegetales salteados.                
+            </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c7.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p> <h4 class="card--title">Pasta</h4>
+                <h4 class="card--title tag-popular">Pechuga al Grill</h4>
+                <p class="menu-item-description">Jugosa pechuga de pollo a la plancha.
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$410.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Jugosa pechuga de pollo a la plancha.
                 </ul>
             </div>
         </div>
@@ -163,7 +161,7 @@
             <div class="card">
                 <img src="../IMG/c8.jpg" alt="">
                 <h4 class="card--title tag-popular">Tomahawk de Cerdo</h4>
-                <p class="menu-item-description">32 onzas de cerdo a la parrilla terminando en horno de leña, servido con arroz de plátanos maduros, tocineta y tostones.</p>
+                <p class="menu-item-description">32 onzas de cerdo a la parrilla terminando en horno de...</p>
                 <div class="card--price">
                     <div class="price">RD$1330.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
@@ -171,103 +169,103 @@
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                32 onzas de cerdo a la parrilla terminando en horno de leña, servido con arroz de plátanos maduros, tocineta y tostones.
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c9.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Churrasco Importado</h4>
+                <p class="menu-item-description">10 oz de jugoso corte de churrasco con sazón de parrilla...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD1200.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                10 oz de jugoso corte de churrasco con sazón de parrilla acompañado de salsa chimichurri.
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c10.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Chuleta BBQ</h4>
+                <p class="menu-item-description">Jugosas chuletas a la parrilla bañadas en salsa BBQ, acompañada...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$460.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Jugosas chuletas a la parrilla bañadas en salsa BBQ, acompañada de crujientes tostones .
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c11.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Filete de Cerdo al Grill</h4>
+                <p class="menu-item-description">8oz de filete de cerdo cocido al grill...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$540.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                8oz de filete de cerdo cocido al grill acompañado de habichuelas rojas y arroz blanco.
                 </ul>
             </div>
         </div>
 
             <div class="card">
                 <img src="../IMG/c12.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Jalapeño Hasselback</h4>
+                <p class="menu-item-description">Pechuga de pollo empanizada rellena con una...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$445.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Pechuga de pollo empanizada rellena con una cremosa pasta de jamón y queso, cubierta en salsa de queso mozzarella, cheddar y cream cheese. Acompañada de foccacia y un toque de jalapeño.
                 </ul>
             </div>
         </div>
 
              <div class="card">
                 <img src="../IMG/c13.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Camarones al Ajillo</h4>
+                <p class="menu-item-description">Camarones servidos en la salsa de mantequilla...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$710.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Camarones servidos en la salsa de mantequilla con ajo y siciliana a la crema.
                 </ul>
             </div>
         </div>
 
              <div class="card">
                 <img src="../IMG/c14.jpg" alt="">
-                <h4 class="card--title tag-popular">Salad</h4>
-                <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
+                <h4 class="card--title tag-popular">Salmon al Grill</h4>
+                <p class="menu-item-description">Filete de salmón a la plancha, acompañado de...</p>
                 <div class="card--price">
-                    <div class="price">RD$299.00</div>
+                    <div class="price">RD$875.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
             </div>
             <!-- Contenido oculto para el modal -->
             <div class="hidden-details">
                 <ul class="ingredients">
-                Tortilla rellena de pechuga de pollo a la plancha y queso danés, acompañados de pico de gallo fresco y guacamole cremoso para una experiencia de sabores auténticos y deliciosos.
+                Filete de salmón a la plancha, acompañado de crujientes tostones.
                 </ul>
             </div>
         </div>

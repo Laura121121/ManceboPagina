@@ -39,7 +39,6 @@
                 <a href="../HTML/hamburguesa.php"><button class="category-btn">Hamburguesas</button></a>
                 <a href="../HTML/mexicano.php"><button class="category-btn">Mexicano</button></a>
                 <a href="../HTML/envoltinis.php"><button class="category-btn">Envoltinis</button></a>
-                <a href="../HTML/asiaticos.php"><button class="category-btn">Asiatico</button></a>
                 <a href="../HTML/carnes.php"><button class="category-btn">Carnes</button></a>
                 <a href="../HTML/pastas.php"><button class="category-btn">Pastas</button></a>
                 <a href="../HTML/postres.php"><button class="category-btn">Postres</button></a>
@@ -49,266 +48,111 @@
 
         <div class="cards">
             <div class="card">
-           <img src="../IMG/b1.jpg" alt="Bruschetta Clásica" class="">
-            <h4 class="card--title tag-popular">Salad</h4>
-            <p class="menu-item-description">Pan tostado con tomate, albahaca y aceite de oliva</p>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../IMG/b2.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../IMG/b3.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="../IMG/b4.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="../IMG/b5.jpg" alt="">
-                <h4 class="card--title">Pizza</h4>
-                <div class="card--price">
-                    <div class="price">RD$450.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="../IMG/b6.jpg" alt="">
-                <h4 class="card--title">Pasta</h4>
-                <div class="card--price">
-                    <div class="price">RD$299.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b7.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b8.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b9.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b10.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b11.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b12.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b13.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b14.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b15.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b16.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
-                <img src="../IMG/b17.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-            </div>
-            <div class="card">
                 <img src="../IMG/b18.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Smoothie Limon</h4>
+                <p class="menu-item-description"></p>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
             </div>
+        </div>
+
             <div class="card">
                 <img src="../IMG/b19.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Smoothie Chinola</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
             </div>
+        </div>
+
             <div class="card">
                 <img src="../IMG/b20.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Smoothie Fresa</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
             </div>
+        </div>
+
             <div class="card">
                 <img src="../IMG/b21.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Smoothie Zapote</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
             </div>
-            <div class="card">
-                <img src="../IMG/b22.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
-                <div class="card">
-                <img src="../IMG/b23.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
-                <div class="card">
-                <img src="../IMG/b24.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
-                <div class="card--price">
-                    <div class="price">RD$375.00</div>
-                    <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b25.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Green Power</h4>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$170.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
+            </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b26.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Berry Blast</h4>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$320.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
+            </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b28.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Tutti Fruti</h4>
                 <div class="card--price">
-                    <div class="price">RD$375.00</div>
+                    <div class="price">RD$210.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-              </div>
+            </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b29.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Malteada de Chocolate</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
+            </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b30.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Malteada de Fresa</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
+            </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b31.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Malteada de Caramelo</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
+            </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b32.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Agua One</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
-                </div>
+            </div>
+        </div>
+
                 <div class="card">
                 <img src="../IMG/b33.jpg" alt="">
-                <h4 class="card--title">Salad</h4>
+                <h4 class="card--title">Agua Perrier</h4>
                 <div class="card--price">
                     <div class="price">RD$375.00</div>
                     <img src="../IMG/Plus.png" alt="Agregar" class="add-to-cart">
-                </div>
             </div>
         </div>
     </main>

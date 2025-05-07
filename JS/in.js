@@ -16,7 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalAddBtn = document.getElementById("modal-add-btn");
     const closeModal = document.querySelector(".close");
 
+    // Cargar el carrito desde localStorage o inicializar vacío
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Función para mantener el carrito abierto
+    function keepCartOpen() {
+        const savedCartState = localStorage.getItem('cartOpen');
+        if (savedCartState === 'true') {
+            sidebar.classList.add('open');
+        }
+    }
+
+    // Llamar a keepCartOpen al cargar la página
+    keepCartOpen();
 
     function addToCart(name, price, image) {
         const existingItem = cartItems.find(item => item.name === name);
@@ -44,10 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const price = parseFloat(priceText);
             const image = card.querySelector('img').src;
             addToCart(name, price, image);
+            
+            // Mantener el carrito abierto al agregar un producto
+            localStorage.setItem('cartOpen', 'true');
+            sidebar.classList.add('open');
         });
     });
 
-    // Evento para abrir modal al hacer clic en la card (excepto en el botón)
+    // Resto del código de eventos para modal (igual que antes)
     document.querySelectorAll(".card").forEach(card => {
         card.addEventListener("click", (e) => {
             if (e.target.closest('.add-to-cart')) return;
@@ -65,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             modalPrice.textContent = price;
             
-            // Guardar datos para el botón de agregar
             modalAddBtn.dataset.name = title;
             modalAddBtn.dataset.price = price.replace("RD$", "").trim();
             modalAddBtn.dataset.image = img;
@@ -83,15 +98,18 @@ document.addEventListener('DOMContentLoaded', () => {
         addToCart(name, price, image);
         modal.style.display = "none";
         document.body.style.overflow = "auto";
+        
+        // Mantener el carrito abierto al agregar un producto
+        localStorage.setItem('cartOpen', 'true');
+        sidebar.classList.add('open');
     });
 
-    // Cerrar modal
+    // Cerrar modal (igual que antes)
     closeModal.addEventListener("click", () => {
         modal.style.display = "none";
         document.body.style.overflow = "auto";
     });
 
-    // Cerrar al hacer clic fuera del modal
     window.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.style.display = "none";
@@ -127,30 +145,35 @@ document.addEventListener('DOMContentLoaded', () => {
             const cartItem = document.createElement('div');
             cartItem.classList.add('cart-item');
             cartItem.innerHTML = `
-                <div class="cart-item-image">
-                    <img src="${item.image}" alt="${item.name}" width="50">
-                </div>
-                <div class="cart-item-details">
-                    <h4>${item.name}</h4>
-                    <div class="cart-item-controls">
-                        <span>RD$${(item.price * item.quantity).toFixed(2)}</span>
-                        <div class="quantity-controls">
-                            <button class="quantity-btn decrease" data-index="${index}">-</button>
-                            <span>${item.quantity}</span>
-                            <button class="quantity-btn increase" data-index="${index}">+</button>
+                <div class="cart-item-content">
+                    <div class="cart-item-image">
+                        <img src="${item.image}" alt="${item.name}" width="70">
+                    </div>
+                    <div class="cart-item-info">
+                        <h4 class="cart-item-title">${item.name}</h4>
+                        <div class="cart-item-right">
+                            <span class="cart-item-price">RD$${(item.price * item.quantity).toFixed(2)}</span>
+                            <div class="cart-item-actions">
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn decrease" data-index="${index}">-</button>
+                                    <span class="quantity">${item.quantity}</span>
+                                    <button class="quantity-btn increase" data-index="${index}">+</button>
+                                </div>
+                                <button class="remove-btn" data-index="${index}">Eliminar</button>
+                            </div>
                         </div>
-                        <button class="remove-btn" data-index="${index}">Eliminar</button>
                     </div>
                 </div>
             `;
             cartItemsList.appendChild(cartItem);
         });
 
-        // Event listeners para los botones del carrito
+        // Event listeners para los botones del carrito - modificados para no cerrar el carrito
         document.querySelectorAll('.remove-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const index = e.target.dataset.index;
                 removeItemFromCart(index);
+                e.stopPropagation();
             });
         });
 
@@ -164,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 saveCart();
                 updateCartUI();
+                e.stopPropagation();
             });
         });
 
@@ -173,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cartItems[index].quantity += 1;
                 saveCart();
                 updateCartUI();
+                e.stopPropagation();
             });
         });
     }
@@ -197,19 +222,25 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    // Event listeners del carrito
+    // Event listeners del carrito - modificados para guardar estado
     cartIcon.addEventListener('click', () => {
-        sidebar.classList.toggle('open');
+        const isOpen = sidebar.classList.toggle('open');
+        localStorage.setItem('cartOpen', isOpen ? 'true' : 'false');
     });
 
     closeButton.addEventListener('click', () => {
         sidebar.classList.remove('open');
+        localStorage.setItem('cartOpen', 'false');
     });
 
     // Cerrar carrito al hacer clic fuera
     document.addEventListener('click', (e) => {
         if (!sidebar.contains(e.target) && !cartIcon.contains(e.target)) {
             sidebar.classList.remove('open');
+            localStorage.setItem('cartOpen', 'false');
         }
     });
+
+    // Inicializar el carrito al cargar la página
+    updateCartUI();
 });
