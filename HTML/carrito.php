@@ -38,29 +38,38 @@
 </html>
 
 <?php
-include("connection.php");
+session_start(); // Asegurar que la sesión esté iniciada
+require_once '../Login/connection.php'; // Conexión a la base de datos
 
-$msg='';
-if(isset($_POST['submit'])){
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    $select1 = "SELECT * FROM `users` WHERE email = '$email' AND password= '$password'";
-    $select_user = mysqli_query($conn,$select1);
-    if(mysqli_num_rows($select_user)> 0){
-        $row1 = mysqli_fetch_assoch($select_user);
-        if($row1['user_type'] == 'user'){
-            $_SESSION['user'] = $row1['email'];
-            $_SESSION['id'] = $row1['id'];
-            header('location:user.php');
-        }
-        elseif($row1['user_type'] =='admin'){
-            $_SESSION['admin'] = $row1['email'];
-            $_SESSION['id'] = $row1['id'];
-            header('location:user.php');
-        }
-        else{
-            $msg= "Contraseña incorrecta, intente de nuevo";
-        }
-    }
+// Verificar si el usuario está autenticado
+if (!isset($_SESSION['user'])) {
+    header('Location: ../Login/login.php'); // Redirigir al login si no está autenticado
+    exit();
 }
+
+// Obtener datos del usuario desde la base de datos
+$userId = $_SESSION['user']['id'];
+$stmt = $conn->prepare("SELECT name, email, address FROM users WHERE id = ?");
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows === 0) {
+    echo "<p>Error: Usuario no encontrado.</p>";
+    exit();
+}
+
+$user = $result->fetch_assoc();
+$stmt->close();
+
+// Procesar la compra y generar la factura
+if (isset($_POST['finalizar_compra'])) {
+    // Aquí puedes agregar la lógica para guardar la compra en la base de datos
+    header('Location: factura.php'); // Redirigir a la página de factura
+    exit();
+}
+?>
+
+<form method="POST" action="">
+    <button type="submit" name="finalizar_compra" class="btn-finalizar">Finalizar Compra</button>
+</form>

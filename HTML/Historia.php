@@ -26,9 +26,7 @@
                     <li><a href="../HTML/entradas.php">MENU</a></li>
                     <li><a href="../HTML/Historia.php">HISTORIA</a></li>
                     <li><a href="../Login/Registro.php">CLOSED</a></li>
-                    <div class="cart-icon">
-                     🛒 <span>0</span>
-                    </div> 
+                     
                 </ul>
             </nav>
         </div>

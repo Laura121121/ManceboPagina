@@ -232,6 +232,27 @@ nav {
   background: #333;
 }
 
+.user-profile {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.user-profile h3 {
+  margin-bottom: 10px;
+}
+
+.user-profile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-profile li {
+  margin: 8px 0;
+}
+
 
 .header__content h2 {
   max-width: 400px;

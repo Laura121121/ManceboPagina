@@ -1,3 +1,16 @@
+<?php
+// Esto debe ser lo PRIMERO en el archivo
+require_once 'connection.php';
+session_start();
+
+// Redirigir si no está autenticado
+
+
+// Mostrar mensaje de bienvenida si existe
+$login_success = $_SESSION['login_success'] ?? null;
+unset($_SESSION['login_success']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,6 +53,7 @@
           <li><a href="../HTML/Desayuno.php">MENU</a></li>
           <li><a href="../HTML/Historia.php">HISTORIA</a></li>
           <li><a href="../Login/Registro.php">CLOSED</a></li>
+      
           <div class="cart-icon">
           <li><a href="#carrito-container"><i class=" ri-shopping-cart-line"></i></a></li>
           </div>
@@ -195,50 +209,89 @@
     </section>
 
     <section class="reservation" id="contact">
-      <div class="section__container reservation__container">
-        <h3>RESERVACION</h3>
-        <h2 class="section__header">LLENA EL FORMULARIO</h2>
-        <form action="/">
-          <input type="text" placeholder="NAME" />
-          <input type="number" placeholder="TEL" />
-          <input type="email" placeholder="EMAIL" />
-          <input type="date" placeholder="DATE" />
-          <input type="time" placeholder="TIME" />
-          <input type="number" placeholder="PEOPLE" />
-          <button class="btn" type="submit">ENVIAR</button>
-        </form>
-      </div>
-      <img
-        src="../IMG/GA-preview.png"
-        alt="reservation"
-        class="reservation__bg-1"
-      />
-      <img
-        src="../IMG/JAMON-preview.png"
-        alt="reservation"
-        class="reservation__bg-2"
-      />
-    </section>
-    <section class="section__container suggestion__container" id="suggestion">
-      <h3>BUZÓN DE SUGERENCIAS</h3>
-      <h2 class="section__header">¡TU OPINIÓN NOS IMPORTA!</h2>
-      <form id="suggestion-form" action="https://formsubmit.co/lauraabigailnovadiaz121@gmail.com" method="POST">
-        <textarea name="message" placeholder="Escribe tu sugerencia aquí..." required></textarea>
-        <button class="btn" type="submit">ENVIAR</button>
-      </form>
-      <p id="message" style="display:none; color: green; margin-top: 10px;">¡Gracias por tu sugerencia!</p>
-    </section>
+  <div class="section__container reservation__container">
+    <h3>RESERVACION</h3>
+    <h2 class="section__header">LLENA EL FORMULARIO</h2>
+<form action="https://formspree.io/f/xnndvbpw?next=/gracias.html" method="POST">      <!-- Agregué atributos 'name' a todos los campos -->
+      <input type="text" name="nombre" placeholder="NAME" required>
+      <input type="tel" name="telefono" placeholder="TEL" required>
+      <input type="email" name="email" placeholder="EMAIL" required>
+      <input type="date" name="fecha" placeholder="DATE" required>
+      <input type="time" name="hora" placeholder="TIME" required>
+      <input type="number" name="personas" placeholder="PEOPLE" min="1" required>
+      <button class="btn" type="submit">ENVIAR</button>
+    </form>
+  </div>
+  <img
+    src="../IMG/GA-preview.png"
+    alt="reservation"
+    class="reservation__bg-1"
+  />
+  <img
+    src="../IMG/JAMON-preview.png"
+    alt="reservation"
+    class="reservation__bg-2"
+  />
+</section>
 
-    <script>
-      document.getElementById("suggestion-form").addEventListener("submit", function(event) {
-        event.preventDefault();
+<script>
+  document.getElementById('reservationForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const response = await fetch('https://formspree.io/f/xnndvbpw', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
+    });
+    if (response.ok) {
+      window.location.href = '/gracias.html'; // Redirigir tras éxito
+    }
+  });
+</script>
+
+
+<section class="section__container suggestion__container" id="suggestion">
+  <h3>BUZÓN DE SUGERENCIAS</h3>
+  <h2 class="section__header">¡TU OPINIÓN NOS IMPORTA!</h2>
+  <form id="suggestion-form" action="https://formspree.io/f/mbloyayz" method="POST">
+    <textarea name="message" placeholder="Escribe tu sugerencia aquí..." required></textarea>
+    <button class="btn" type="submit">ENVIAR</button>
+  </form>
+  <p id="message" style="display:none; color: green; margin-top: 10px;">¡Gracias por tu sugerencia!</p>
+</section>
+
+<script>
+  document.getElementById("suggestion-form").addEventListener("submit", async function(event) {
+    event.preventDefault();
+    const form = event.target;
+    
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        // Mostrar mensaje de éxito
         document.getElementById("message").style.display = "block";
         setTimeout(() => {
           document.getElementById("message").style.display = "none";
         }, 3000);
-        this.reset();
-      });
-    </script>
+        form.reset();
+      } else {
+        throw new Error('Error en el envío');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Hubo un error al enviar tu sugerencia. Por favor intenta nuevamente.');
+    }
+  });
+</script>
 
     <section class="section-footer">
       <footer class="footer">
@@ -288,3 +341,4 @@
 
   </body>
 </html> 
+

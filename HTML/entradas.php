@@ -176,8 +176,8 @@
        </div>
     </main>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
+        <!-- Modal -->
+        <div id="modal" class="modal">
   <div class="modal-content">
      <span class="close">&times;</span>
      <img id="modal-img" src="" alt="">
@@ -198,8 +198,59 @@
             <span> Envío:</span> RD$0.00<br>
             <strong>Total: RD$0.00</strong>
         </div>
-        <button class="clooose">Finalizar compra</button>
+
+        <div class="payment-options">
+        <!-- Opción PayPal -->
+        <label class="payment-method paypal-method selected">
+            <input type="radio" name="payment-method" value="paypal" checked>
+            <img src="../IMG/pp.png" alt="PayPal" class="payment-icon">
+            <div class="payment-details">
+                <h4>PayPal</h4>
+                <p>Pago con cuenta PayPal</p>
+            </div>
+        </label>
+        
+        <!-- Opción Efectivo -->
+        <label class="payment-method cash-method">
+            <input type="radio" name="payment-method" value="cash">
+            <div class="payment-icon">$</div>
+            <div class="payment-details">
+                <h4>Efectivo</h4>
+                <p>Paga al recibir tu pedido</p>
+            </div>
+        </label>
     </div>
+    
+    <button class="finalize-btn" id="finalizar-compra">Finalizar compra</button>
+    <style>
+    .finalize-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #D94E28, #ff7043);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.finalize-btn:hover {
+    background: linear-gradient(135deg, #c04524, #e85c35);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.finalize-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+    </style>
+    </div>
+       
 
     <section class="section-footer">
         <footer class="footer">
@@ -243,5 +294,79 @@
       </section>
 
     <script src="../JS/in.js"></script>
+    <script>
+        // Configuración de PayPal
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: document.querySelector('.cart-total strong').textContent.replace('Total: RD$', '') / 56.50 // Conversión a USD
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Pago completado por ' + details.payer.name.given_name);
+                    // Aquí puedes enviar los datos a tu backend
+                });
+            }
+        }).render('#paypal-button-container');
+
+        // Mostrar/ocultar instrucciones de pago en efectivo
+        document.getElementById('cash').addEventListener('change', function() {
+            if(this.checked) {
+                document.querySelector('.cash-instructions').style.display = 'block';
+                document.getElementById('paypal-button-container').style.display = 'none';
+            }
+        });
+
+        document.getElementById('paypal').addEventListener('change', function() {
+            if(this.checked) {
+                document.querySelector('.cash-instructions').style.display = 'none';
+                document.getElementById('paypal-button-container').style.display = 'block';
+            }
+        });
+    </script>
+    <script>
+document.getElementById('finalizar-compra').addEventListener('click', function() {
+    // Obtener datos del carrito
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const cartTotal = document.querySelector('.cart-total strong').textContent;
+    
+    // Obtener datos del usuario desde la sesión PHP
+    <?php if(isset($_SESSION['user'])): ?>
+        const userData = {
+            nombre: '<?php echo $_SESSION['user']['name']; ?>',
+            email: '<?php echo $_SESSION['user']['email']; ?>',
+            direccion: '<?php echo isset($_SESSION['user']['address']) ? $_SESSION['user']['address'] : 'Dirección no especificada'; ?>'
+        };
+    <?php else: ?>
+        const userData = {
+            nombre: 'Cliente Generico',
+            email: '',
+            direccion: 'Dirección no especificada'
+        };
+    <?php endif; ?>
+    
+    // Obtener método de pago seleccionado
+    const paymentMethod = document.querySelector('input[name="payment-method"]:checked').value;
+    
+    // Guardar datos en localStorage para la factura
+    localStorage.setItem('facturaData', JSON.stringify({
+        items: cartItems,
+        total: cartTotal,
+        cliente: userData,
+        paymentMethod: paymentMethod,
+        fecha: new Date().toISOString()
+    }));
+    
+    // Redirigir a la página de factura
+    window.location.href = 'factura.php';
+});
+</script>
 </body>
 </html>
+
+

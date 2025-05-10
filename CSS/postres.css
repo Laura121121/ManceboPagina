@@ -382,7 +382,7 @@ header {
 
 .cart-total strong {
     font-size: 18px;
-    color: #D94E28;
+    color: #a70606;
 }
 
 .sidebar span {
@@ -392,6 +392,112 @@ header {
 .sidebar strong {
     font-size: 17px;
 }
+
+/* Sección de métodos de pago */
+.payment-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.payment-section h3 {
+    color: #D94E28;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.payment-method:hover {
+    background: #f0f0f0;
+}
+
+
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #D94E28;
+}
+
+.payment-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.payment-details h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.payment-details p {
+    margin: 3px 0 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Estilos específicos para cada método */
+.paypal-method .payment-icon {
+    background-color: #fcfdfd;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.cash-method .payment-icon {
+    background-color: #4CAF50;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.finalize-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #D94E28, #ff7043);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.finalize-btn:hover {
+    background: linear-gradient(135deg, #c04524, #e85c35);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.finalize-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Footer */
 .footer {

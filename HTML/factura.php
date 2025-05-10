@@ -31,6 +31,16 @@
             margin: 0;
             font-size: 28px;
         }
+
+        .info-pago {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.info-pago h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
         
         .info-factura {
             display: flex;
