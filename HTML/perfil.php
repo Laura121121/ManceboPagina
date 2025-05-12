@@ -1,99 +1,155 @@
-<?php
-require_once '../Login/connection.php'; // Conexión a la base de datos
-session_start();
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Envío</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      padding: 40px 0;
+    }
 
-// Verificar si el usuario está autenticado
-if (!isset($_SESSION['user'])) {
-    header('Location: ../Login/login.php');
-    exit();
-}
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
 
-// Obtener datos del usuario desde la base de datos
-$userId = $_SESSION['user']['id'];
-$stmt = $conn->prepare("SELECT name, email, created_at FROM users WHERE id = ?");
-$stmt->bind_param("i", $userId);
-$stmt->execute();
-$result = $stmt->get_result();
+    .form-group {
+      margin-bottom: 20px;
+    }
 
-if ($result->num_rows === 0) {
-    echo "<p>Error: Usuario no encontrado.</p>";
-    exit();
-}
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #333;
+    }
 
-$user = $result->fetch_assoc();
-$stmt->close();
-?>
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s ease;
+    }
 
-<!-- Sección de información del perfil con el menú principal y botón para ver el perfil -->
-<div class="profile-section">
-    <nav class="main-menu">
-        <ul>
-            <li><a href="../Login/Principal.php">Inicio</a></li>
-            <li><a href="Desayuno.php">Menú</a></li>
-            <li><a href="Historia.php">Historia</a></li>
-            <li><a href="perfil.php" class="btn-profile">Ver Perfil</a></li>
-        </ul>
-    </nav>
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #82b1ff;
+      background-color: #fff;
+    }
 
-    <div class="profile-info">
-        <h2>Información del Perfil</h2>
-        <ul>
-            <li><strong>Nombre:</strong> <?= htmlspecialchars($user['name']) ?></li>
-            <li><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></li>
-            <li><strong>Fecha de Registro:</strong> <?= htmlspecialchars($user['created_at']) ?></li>
-        </ul>
-    </div>
-</div>
+    .payment-options {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-<style>
-.profile-section {
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-.main-menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-.main-menu ul li {
-    display: inline;
-}
-.main-menu ul li a {
-    text-decoration: none;
-    color: #4e73df;
-    font-weight: bold;
-    padding: 10px 15px;
-    border: 1px solid #4e73df;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-}
-.main-menu ul li a:hover {
-    background: #4e73df;
-    color: #fff;
-}
-.profile-info {
-    margin-top: 20px;
-}
-.profile-info h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-}
-.profile-info ul {
-    list-style: none;
-    padding: 0;
-}
-.profile-info ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #555;
-}
-.profile-info ul li strong {
-    color: #4e73df;
-}
-</style>
+    .payment-option {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background-color: #f5f7fa;
+      border: 2px solid transparent;
+      padding: 15px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .payment-option:hover {
+      border-color: #82b1ff;
+      background-color: #eef3fc;
+    }
+
+    .payment-option input[type="radio"] {
+      margin-right: 12px;
+      accent-color: #4285f4;
+      transform: scale(1.2);
+    }
+
+    .payment-option img {
+      height: 30px;
+      margin-right: 12px;
+    }
+
+    .payment-option .icon {
+      font-size: 26px;
+      margin-right: 12px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #4285f4;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <form action="procesar_envio.php" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <textarea id="direccion" name="direccion" rows="3" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Método de pago:</label>
+        <div class="payment-options">
+          <label class="payment-option">
+            <input type="radio" name="metodo_pago" value="paypal" required>
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal">
+            <div>
+              <strong>PayPal</strong><br>
+              <small>Pago con cuenta PayPal</small>
+            </div>
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="metodo_pago" value="efectivo">
+            <span class="icon">💵</span>
+            <div>
+              <strong>Efectivo</strong><br>
+              <small>Paga al recibir tu pedido</small>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar pedido</button>
+    </form>
+  </div>
+
+</body>
+</html>

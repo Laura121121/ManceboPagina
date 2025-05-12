@@ -53,10 +53,6 @@ unset($_SESSION['login_success']);
           <li><a href="../HTML/Desayuno.php">MENU</a></li>
           <li><a href="../HTML/Historia.php">HISTORIA</a></li>
           <li><a href="../Login/Registro.php">CLOSED</a></li>
-      
-          <div class="cart-icon">
-          <li><a href="#carrito-container"><i class=" ri-shopping-cart-line"></i></a></li>
-          </div>
         </ul>
       </nav>
       <div class="section__container header__container" id="home">
